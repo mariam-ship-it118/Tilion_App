@@ -1,6 +1,7 @@
 import React from 'react';
 import './Splash.css';
 import Logo from '../Assets/logo.svg';
+import { Link } from 'react-router-dom';
 const SplashScreen = () => {
   return (
     <div className="app-container">
@@ -31,7 +32,9 @@ const SplashScreen = () => {
           
           <div className="action-buttons">
             <button className="auth-btn">Login</button>
+            <Link to="/signup">
             <button className="auth-btn">SignUp</button>
+            </Link>
           </div>
         </section>
       </main>

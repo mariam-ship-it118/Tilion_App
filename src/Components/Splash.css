@@ -8,10 +8,6 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-body {
-  background-color: #1a1a2e; /* Fallback dark background */
-}
-
 /* --- Container & Layout --- */
 .app-container {
   position: relative;
