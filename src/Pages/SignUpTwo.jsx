@@ -23,7 +23,7 @@ const SignupPageTwo = () => {
         </div>
 
         <h2 className="welcome-title slide-up">Welcome to Tilion</h2>
-
+    
         {/* Signup Form */}
         <form className="signup-form slide-up-delayed">
           <div className="input-group">

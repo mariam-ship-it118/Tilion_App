@@ -47,8 +47,9 @@ const Login = () => {
 
       {/* Footer Area */}
       <div className="footer slide-up-delayed-2">
-        
+        <Link to="/home">
         <button className="next-btn">Next</button>
+        </Link>
        
       </div>
     </div>

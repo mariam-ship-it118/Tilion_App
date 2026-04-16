@@ -5,6 +5,7 @@ import SplashScreen from './Components/Splash';
 import SignupPage from './Pages/SignUp';
 import SignupPageTwo from './Pages/SignUpTwo';
 import Login from './Pages/Login';
+import Home from './Pages/Home';
 
 
 
@@ -16,6 +17,7 @@ const RoutingApp = () => {
         <Route path="/signup" element={<SignupPage/>} />
         <Route path="/signup2" element={<SignupPageTwo/>} />
       <Route path="/login" element={<Login/>} />
+      <Route path="/home" element={<Home/>} />
 
 
       </Routes>
