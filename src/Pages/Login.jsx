@@ -3,7 +3,7 @@ import './SignUp.css';
 import Logo from '../Assets/logo_2.svg';
 import { Link } from 'react-router-dom';
 
-const SignupPage = () => {
+const Login = () => {
   return (
     <div className="signup-container fade-in">
       {/* Top Navigation */}
@@ -26,13 +26,10 @@ const SignupPage = () => {
 
         {/* Signup Form */}
         <form className="signup-form slide-up-delayed">
-          <div className="input-group">
-            <label htmlFor="name">Name</label>
-            <input type="text" id="name" />
-          </div>
+       
           
           <div className="input-group">
-            <label htmlFor="contact">email/ phone number</label>
+            <label htmlFor="contact">Username</label>
             <input type="text" id="contact" />
           </div>
           
@@ -40,21 +37,22 @@ const SignupPage = () => {
             <label htmlFor="password">Password</label>
             <input type="password" id="password" />
           </div>
-          
-          <div className="form-actions">
+             <div className="form-actions">
             <a href="#forgot" className="forgot-pwd">Forgot password?</a>
           </div>
+       
+         
         </form>
       </div>
 
       {/* Footer Area */}
       <div className="footer slide-up-delayed-2">
-        <Link to="/signup2">
+        
         <button className="next-btn">Next</button>
-        </Link>
+       
       </div>
     </div>
   );
 };
 
-export default SignupPage;
+export default Login; 

@@ -31,7 +31,9 @@ const SplashScreen = () => {
           </div>
           
           <div className="action-buttons">
+            <Link to="/login">
             <button className="auth-btn">Login</button>
+            </Link>
             <Link to="/signup">
             <button className="auth-btn">SignUp</button>
             </Link>
