@@ -10,6 +10,7 @@ const RoutingApp = () => {
     <Router>
       <Routes>
         <Route path="/" element={<SplashScreen/>} />
+        <Route path="/signup" element={</>} />
        
 
       </Routes>
