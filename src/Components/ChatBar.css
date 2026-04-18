@@ -1,0 +1,109 @@
+.chat-bar-container {
+  position: fixed;
+  width: 95%;
+  max-width: 600px;
+  margin: 20px auto;
+  font-family: sans-serif;
+  margin-top: -30%;
+  margin-left: 2.5%;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: #0d122b; /* Darker navy from image */
+  border-radius: 40px;
+  padding: 8px 16px;
+  gap: 12px;
+  height: 60px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.text-field-container {
+  flex: 1;
+  background-color: #cbd5f0; /* Light blue/grey input area */
+  border-radius: 30px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.chat-input {
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  color: #4a5568;
+  font-size: 1rem;
+}
+
+.action-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.plus-btn.active {
+  transform: rotate(45deg); /* Visual cue that menu is open */
+  color: #bfc9f2;
+}
+
+/* Popup Menu Styling */
+.attachment-menu {
+  position: absolute;
+  bottom: 80px;
+  right: 10px;
+  background-color: #121931;
+  border-radius: 18px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 140px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  animation: popUp 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  opacity: 0;
+  animation: fadeInSlide 0.2s ease forwards;
+}
+
+.menu-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.menu-label { font-size: 0.9rem; }
+
+/* Animations */
+@keyframes popUp {
+  from { opacity: 0; transform: translateY(20px) scale(0.8); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes fadeInSlide {
+  to { opacity: 1; transform: translateX(0); }
+  from { opacity: 0; transform: translateX(10px); }
+}
+
+/* Tablet sizing */
+@media (min-width: 768px) {
+  .input-wrapper { height: 70px; padding: 10px 25px; }
+  .text-field-container { height: 50px; }
+}
