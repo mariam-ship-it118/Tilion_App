@@ -1,0 +1,111 @@
+/* Layout & Container */
+.chat-header {
+  display: flex;
+  align-items: center;
+  background-color: #0a0e27; /* Dark navy from image */
+  padding: 10px 16px;
+  height: 70px;
+  gap: 12px;
+  animation: slideDown 0.4s ease-out;
+}
+
+/* Common Button Resets */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* Profile Section Button */
+.profile-link-btn {
+  flex: 1; /* Pushes action icons to the right */
+  text-align: left;
+  gap: 12px;
+}
+
+.avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid #2d3748;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.active-status {
+  color: #c4d600; /* Yellow-green from image */
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* Action Buttons (Right Side) */
+.actions {
+  display: flex;
+  gap: 20px;
+  padding-left: 10px;
+}
+
+.icon-btn {
+  font-size: 24px;
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+.icon-btn:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+/* CSS Chevron for the back button */
+.chevron-left {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 5px;
+  transform: rotate(135deg);
+}
+
+/* Entrance Animation */
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Tablet Scaling */
+@media (min-width: 768px) {
+  .chat-header {
+    height: 85px;
+    padding: 10px 30px;
+  }
+  .avatar {
+    width: 55px;
+    height: 55px;
+  }
+  .user-name {
+    font-size: 1.3rem;
+  }
+}

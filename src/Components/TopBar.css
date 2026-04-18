@@ -1,0 +1,149 @@
+/* --- Base Layout & Container --- */
+.playroom-top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFFCDD; /* Light cream/yellow background from design */
+  width: 100%;
+  box-sizing: border-box;
+  padding: 16px 32px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+/* --- Left: Profile Avatar --- */
+.friend-profile-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1;
+}
+
+.little-buddy-avatar {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.little-buddy-avatar:hover {
+  transform: scale(1.1) rotate(-5deg);
+}
+
+/* --- Center: App Logo --- */
+.cool-app-branding {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.magical-app-logo {
+  height: 65px;
+  width: auto;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.magical-app-logo:hover {
+  transform: scale(1.08) translateY(-2px);
+}
+
+/* --- Right: Notifications Bell --- */
+.news-alert-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+.ding-ding-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+}
+
+.ding-ding-button:focus {
+  outline: none;
+}
+
+.chime-icon {
+  width: 34px;
+  height: 34px;
+  fill: none;
+  stroke: #2D398E; /* Dark blue matching the design */
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transform-origin: top center;
+}
+
+/* Wiggle animation for the bell on hover */
+.ding-ding-button:hover .chime-icon {
+  animation: ring-ring-wiggle 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes ring-ring-wiggle {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(-15deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(15deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* --- Responsive Breakpoints --- */
+
+/* Mobile Phones */
+@media screen and (max-width: 480px) {
+  .playroom-top-header {
+    padding: 12px 16px;
+  }
+  .little-buddy-avatar {
+    width: 45px;
+    height: 45px;
+  }
+  .magical-app-logo {
+    height: 50px;
+  }
+  .chime-icon {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+/* Tablets */
+@media screen and (min-width: 481px) and (max-width: 820px) {
+  .playroom-top-header {
+    padding: 16px 24px;
+  }
+  .little-buddy-avatar {
+    width: 50px;
+    height: 50px;
+  }
+  .magical-app-logo {
+    height: 55px;
+  }
+  .chime-icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/* Standard Web / Desktop (Default styles handle this, but adding max-width constraint for super large screens) */
+@media screen and (min-width: 1200px) {
+  .playroom-top-header {
+    padding: 20px 40px;
+  }
+}

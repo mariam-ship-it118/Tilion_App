@@ -5,7 +5,10 @@ import SplashScreen from './Components/Splash';
 import SignupPage from './Pages/SignUp';
 import SignupPageTwo from './Pages/SignUpTwo';
 import Login from './Pages/Login';
-import Home from './Pages/Home';
+import Home from './Pages/Child/Home';
+import Messages from './Pages/Child/Messages';
+import Chat from './Pages/Child/Chat';
+
 
 
 
@@ -18,6 +21,8 @@ const RoutingApp = () => {
         <Route path="/signup2" element={<SignupPageTwo/>} />
       <Route path="/login" element={<Login/>} />
       <Route path="/home" element={<Home/>} />
+        <Route path="/chats" element={<Messages/>} />
+        <Route path="/chat/:userId" element={<Chat />} />
 
 
       </Routes>

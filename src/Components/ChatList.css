@@ -1,0 +1,90 @@
+/* Container and Background */
+.app-container {
+  background-color: #FFFCDD; /* The light yellow tint from your image */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  font-family: 'Inter', sans-serif;
+  font-family: poppins;
+}
+/* Remove default link styling */
+.chat-link {
+  text-decoration: none;
+  color: inherit;
+  display: block; /* Makes the whole row clickable */
+}
+
+.chat-item:active {
+  background-color: rgba(0, 0, 0, 0.05); /* Visual feedback when tapped on phone */
+}
+.message-page {
+  width: 100%;
+  max-width: 500px; /* Limits width on tablets for better UI */
+  padding: 0 15px;
+}
+
+/* Individual Message Row */
+.chat-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05); /* Subtle separator */
+}
+
+/* Grey Avatar Circle */
+.chat-avatar {
+  width: 65px;
+  height: 65px;
+  background-color: #d8d8d8;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Text Content Wrapper */
+.chat-info {
+  flex-grow: 1;
+  padding-left: 15px;
+}
+
+.chat-name {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2d3436;
+}
+
+.chat-last-message {
+  margin: 2px 0;
+  font-size: 1rem;
+  color: #2d3436;
+}
+
+.chat-status {
+  font-size: 0.85rem;
+  color: #3f51b5; /* Blue "Active now" text */
+  font-weight: 500;
+}
+
+/* Right Side Blue Dot */
+.chat-indicator {
+  padding-left: 10px;
+}
+
+.blue-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #303f9f;
+  border-radius: 50%;
+}
+
+/* Tablet Responsiveness */
+@media (min-width: 768px) {
+  .message-page {
+    max-width: 650px;
+    background: #ffffff; /* Optional: adds a card feel on larger screens */
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+}

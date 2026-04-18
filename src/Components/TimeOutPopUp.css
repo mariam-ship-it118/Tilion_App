@@ -1,0 +1,89 @@
+/* EnergyPopup.css */
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Dimmed background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  padding: 20px;
+}
+
+.popup-container {
+  position: relative;
+  width: 100%;
+  max-width: 400px; /* Tablet sizing limit */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cat-illustration-container {
+  margin-bottom: -40px; /* Pulls the cat over the card */
+  z-index: 10;
+}
+
+.cat-character {
+  font-size: 80px; /* Placeholder for your cat asset */
+  filter: drop-shadow(0px 4px 8px rgba(0,0,0,0.2));
+}
+
+.popup-card {
+  background-color: #0d1326; /* Dark navy from your image */
+  border-radius: 40px;
+  padding: 60px 30px 40px 30px;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.popup-title {
+  color: #f6e02d; /* Yellow text */
+  font-family: 'Comic Sans MS', 'Inter', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin: 0 0 8px 0;
+  text-transform: lowercase;
+}
+
+.popup-subtitle {
+  color: #f6e02d;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 30px 0;
+  text-transform: lowercase;
+}
+
+.popup-button {
+  background-color: #e2e8ff; /* Soft lavender/white */
+  color: #0d1326;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 40px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.popup-button:active {
+  transform: scale(0.95);
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+  .popup-card {
+    border-radius: 30px;
+    padding: 50px 20px 30px 20px;
+  }
+  
+  .popup-title {
+    font-size: 1.1rem;
+  }
+}

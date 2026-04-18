@@ -1,6 +1,6 @@
 import React from 'react';
 import './NavBar.css';
-
+import { Link } from 'react-router-dom';
 const NavBar = () => {
   return (
     <nav className="playground-navbar">
@@ -27,6 +27,7 @@ const NavBar = () => {
           <span className="kid-label-text">Activities</span>
         </button>
 
+<Link to="/home">
         <button className="buddy-action-btn">
           <div className="fun-icon-wrapper">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -37,6 +38,9 @@ const NavBar = () => {
           <span className="kid-label-text">Home</span>
         </button>
 
+</Link>
+
+<Link to="/chats">
         <button className="buddy-action-btn">
           <div className="fun-icon-wrapper">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -46,6 +50,7 @@ const NavBar = () => {
           </div>
           <span className="kid-label-text">Chats</span>
         </button>
+</Link>
 
         <button className="buddy-action-btn">
           <div className="fun-icon-wrapper">
