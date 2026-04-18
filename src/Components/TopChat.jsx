@@ -13,23 +13,24 @@ const TopChat = () => {
         <span className="chevron-left"></span>
       </button>
       </Link>
-
+<Link to="/childprofile">
       {/* Profile Section (Single Button) */}
       <button 
         className="profile-link-btn" 
         onClick={() => console.log("Navigate to Profile")}
-      >
+        >
         <img 
           src={Prof} 
           alt="Omar Bus" 
           className="avatar" 
-        />
+          />
         <div className="user-info">
           <h2 className="user-name">Omar Bus</h2>
           <span className="active-status">Active now</span>
         </div>
       </button>
 
+          </Link>
       {/* Action Icons */}
       <div className="actions">
         <button 

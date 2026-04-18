@@ -8,6 +8,7 @@ import Login from './Pages/Login';
 import Home from './Pages/Child/Home';
 import Messages from './Pages/Child/Messages';
 import Chat from './Pages/Child/Chat';
+import FriendsProfile from './Pages/Child/FriendsProfile';
 
 
 
@@ -23,6 +24,7 @@ const RoutingApp = () => {
       <Route path="/home" element={<Home/>} />
         <Route path="/chats" element={<Messages/>} />
         <Route path="/chat/:userId" element={<Chat />} />
+        <Route path="/childprofile" element={<FriendsProfile />} />
 
 
       </Routes>
