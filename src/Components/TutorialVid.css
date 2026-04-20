@@ -1,0 +1,124 @@
+/* SocialFeedBundle.css */
+
+/* Global app container - matches the cream background */
+.content-app-wrapper {
+  background-color: #fffdec;
+  min-height: 100vh;
+  padding: 20px 16px;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.app-post-container {
+  width: 100%;
+  max-width: 500px; /* Tablet sizing */
+}
+
+/* Typography */
+.activity-title-text {
+  color: #3f51b5; /* Indigo blue */
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.sub-heading-info {
+  color: #3f51b5;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+/* Media Containers */
+.media-frame-primary, .player-aspect-box, .step-gallery-grid {
+  margin: 0 0 20px 0;
+  width: 100%;
+}
+
+.ui-rounded-img {
+  width: 100%;
+  height: auto;
+  border-radius: 28px;
+  display: block;
+}
+
+/* Video Player UI */
+.player-aspect-box {
+  position: relative;
+  border-radius: 28px;
+  overflow: hidden;
+  background-color: #1a1f36;
+}
+
+.video-thumb-overlay {
+  position: relative;
+  cursor: pointer;
+}
+
+.blurred-media {
+  opacity: 0.6;
+  filter: brightness(0.8);
+}
+
+.btn-play-trigger {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.play-triangle {
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 35px solid #f6e02d; /* Yellow from design */
+  margin-left: 5px;
+}
+
+.active-media-stream {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+/* Instruction Grid with Floating Icon */
+.grid-media-canvas {
+  position: relative;
+}
+
+.icon-badge-float {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #0d1326;
+  color: white;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.svg-cam-icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* Tablet Optimizations */
+@media (min-width: 768px) {
+  .app-post-container {
+    max-width: 600px;
+  }
+  .activity-title-text {
+    font-size: 1.8rem;
+  }
+}

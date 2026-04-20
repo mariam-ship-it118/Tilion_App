@@ -1,0 +1,127 @@
+/* CraftGuide.css */
+
+.guide-wrapper {
+  background-color: #fffde7; /* Soft yellow background from image */
+  min-height: 100vh;
+  padding: 24px 16px;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.guide-container {
+  max-width: 600px; /* Optimal for tablets */
+  margin: 0 auto;
+}
+
+.guide-section {
+  margin-bottom: 32px;
+}
+
+.section-title {
+  color: #4a5ab5; /* Purple-blue heading color */
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+/* Materials & Checkboxes */
+.materials-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.material-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.custom-checkbox {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #d1d5db; /* Grey circle */
+  margin-right: 12px;
+  margin-top: 3px;
+  flex-shrink: 0;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.custom-checkbox.is-checked {
+  background-color: #4a5ab5;
+  position: relative;
+}
+
+.custom-checkbox.is-checked::after {
+  content: '✓';
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.material-text {
+  color: #374151;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* Paper Sizes */
+.sizes-list {
+  padding-left: 20px;
+  color: #374151;
+}
+
+.sizes-list li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+/* Steps */
+.step-block {
+  margin-bottom: 24px;
+}
+
+.step-heading {
+  color: #2563eb; /* Brighter blue for step numbers */
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.step-description {
+  color: #374151;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Examples Box */
+.examples-box {
+  margin-top: 12px;
+  padding-left: 12px;
+}
+
+.example-label {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.example-list {
+  margin: 0;
+  padding-left: 20px;
+}
+
+/* Tablet Optimizations */
+@media (min-width: 768px) {
+  .guide-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+}

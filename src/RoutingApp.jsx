@@ -11,7 +11,9 @@ import Chat from './Pages/Child/Chat';
 import FriendsProfile from './Pages/Child/FriendsProfile';
 import ActivityList from './Components/ActivityCards';
 import Activities from './Pages/Child/Activities';
-
+import CraftsActivity from './Pages/Child/CraftsActivity';
+import BookChainCrafting from './Pages/Child/BookChainCrafting';
+import UserProfileView from './Pages/Child/Profile';
 
 
 
@@ -28,6 +30,9 @@ const RoutingApp = () => {
         <Route path="/chat/:userId" element={<Chat />} />
         <Route path="/childprofile" element={<FriendsProfile />} />
         <Route path="/activity" element={<Activities />} />
+        <Route path="/activity/crafting" element={<CraftsActivity />} />
+<Route path="/activity/crafting/bookchain" element={<BookChainCrafting />} />
+        <Route path="/profile" element={<UserProfileView/>} />
 
 
       </Routes>
