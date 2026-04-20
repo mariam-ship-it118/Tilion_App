@@ -16,6 +16,8 @@ const NavBar = () => {
           </div>
           <span className="kid-label-text">Add</span>
         </button>
+<Link to="/activity">
+
 
         <button className="buddy-action-btn">
           <div className="fun-icon-wrapper">
@@ -26,6 +28,7 @@ const NavBar = () => {
           </div>
           <span className="kid-label-text">Activities</span>
         </button>
+</Link>
 
 <Link to="/home">
         <button className="buddy-action-btn">
