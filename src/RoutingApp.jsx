@@ -14,6 +14,10 @@ import Activities from './Pages/Child/Activities';
 import CraftsActivity from './Pages/Child/CraftsActivity';
 import BookChainCrafting from './Pages/Child/BookChainCrafting';
 import UserProfileView from './Pages/Child/Profile';
+import CallScreen from './Pages/Child/CallScreen';
+import AccountScreen from './Pages/Accounts';
+import TilionWelcome from './Pages/Accounts';
+import HomeParent from './Pages/Parent/HomeParent';
 
 
 
@@ -25,6 +29,7 @@ const RoutingApp = () => {
         <Route path="/signup" element={<SignupPage/>} />
         <Route path="/signup2" element={<SignupPageTwo/>} />
       <Route path="/login" element={<Login/>} />
+       <Route path="/accounts" element={<TilionWelcome/>} />
       <Route path="/home" element={<Home/>} />
         <Route path="/chats" element={<Messages/>} />
         <Route path="/chat/:userId" element={<Chat />} />
@@ -33,6 +38,13 @@ const RoutingApp = () => {
         <Route path="/activity/crafting" element={<CraftsActivity />} />
 <Route path="/activity/crafting/bookchain" element={<BookChainCrafting />} />
         <Route path="/profile" element={<UserProfileView/>} />
+        <Route path="/call" element={<CallScreen/>} />
+
+
+{/* parent */}
+
+
+<Route path="/homeparent" element={<HomeParent/>} />
 
 
       </Routes>

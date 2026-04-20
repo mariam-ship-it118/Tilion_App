@@ -6,7 +6,7 @@ import KidsSocialPost from '../../Components/PostsKids';
 import PostOne from '../../Assets/post_1.svg';
 import TimeOutPopUp from '../../Components/TimeOutPopUp';
 
-const Home = () => {
+const HomeParent = () => {
     return ( <>
     <TopBar/>
 
@@ -35,4 +35,4 @@ const Home = () => {
     </> );
 }
  
-export default Home;
+export default HomeParent;

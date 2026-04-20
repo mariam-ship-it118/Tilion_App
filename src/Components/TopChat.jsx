@@ -33,15 +33,19 @@ const TopChat = () => {
           </Link>
       {/* Action Icons */}
       <div className="actions">
+          <Link to="/call">
         <button 
           className="icon-btn call-btn" 
           onClick={() => console.log("Navigate to Phone Call")}
           aria-label="Phone call"
-        >
+          >
           <i className="phone-icon">
             <img src={Phone} alt="" />
           </i>
         </button>
+
+          </Link>
+
         <button 
           className="icon-btn video-btn" 
           onClick={() => console.log("Navigate to Video Call")}

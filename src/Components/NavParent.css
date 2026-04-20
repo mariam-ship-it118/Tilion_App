@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+/* Global Reset for the component */
+.tangerine-base {
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  z-index: 9999;
+  padding: 0 15px;
+}
+
+/* The main dark capsule */
+.orbit-wrapper {
+  background-color: #0a0e27; /* Dark navy from image */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 500px; /* Tablet constraint */
+  padding: 12px 10px;
+  border-radius: 50px; /* Super rounded pill shape */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  
+  /* Entrance animation */
+  animation: sprout 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.portal-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  flex: 1;
+}
+
+.glyph-asset {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 4px;
+  filter: brightness(0) invert(1); /* Forces white icons */
+}
+
+.label-text {
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+}
+
+/* Subtle Pop-in animation */
+@keyframes sprout {
+  0% {
+    transform: translateY(40px) scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+/* Tablet and Phone logic */
+@media (max-width: 768px) {
+  .orbit-wrapper {
+    max-width: 90%;
+  }
+  
+  .label-text {
+    font-size: 10px;
+  }
+}
+
+/* Hide on Desktop screens */
+@media (min-width: 1025px) {
+  .tangerine-base {
+    display: none;
+  }
+}
