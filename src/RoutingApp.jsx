@@ -18,6 +18,7 @@ import CallScreen from './Pages/Child/CallScreen';
 import AccountScreen from './Pages/Accounts';
 import TilionWelcome from './Pages/Accounts';
 import HomeParent from './Pages/Parent/HomeParent';
+import ParentControl from './Pages/Parent/ParentControl';
 
 
 
@@ -45,7 +46,7 @@ const RoutingApp = () => {
 
 
 <Route path="/homeparent" element={<HomeParent/>} />
-
+<Route path="/parentcontrol" element={<ParentControl/>} />
 
       </Routes>
     </Router>

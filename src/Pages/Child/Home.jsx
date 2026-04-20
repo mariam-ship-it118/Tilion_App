@@ -5,7 +5,7 @@ import KidsStoryBar from '../../Components/StoriesKids';
 import KidsSocialPost from '../../Components/PostsKids';
 import PostOne from '../../Assets/post_1.svg';
 import TimeOutPopUp from '../../Components/TimeOutPopUp';
-
+import { Link } from 'react-router-dom';
 const HomeParent = () => {
     return ( <>
     <TopBar/>

@@ -1,0 +1,133 @@
+/* Importing Poppins as requested */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+  --bubblegum-blue: #3b5998;
+  --starlight-yellow: #fff200;
+  --cloud-white: #FFFCDD; /* Matches your image background */
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--cloud-white);
+}
+
+/* SEO Component: Hidden but readable by crawlers */
+.pixel-privacy-label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* Base Mobile Layout */
+.kredit-top-bar {
+  padding: 15px 20px;
+  background: var(--cloud-white);
+}
+
+.glitter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 80px;
+}
+
+/* Logo specific styling */
+.orbit-central-hub {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.planet-core {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #2b45a2 0%, #7292cf 100%);
+  border-radius: 50%;
+  position: relative;
+  box-shadow: inset -5px -5px 10px rgba(0,0,0,0.2);
+}
+
+.spark-flare {
+  position: absolute;
+  left: -10px;
+  bottom: 5px;
+  width: 25px;
+  height: 25px;
+  background-color: var(--starlight-yellow);
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  animation: pulse-glow 2s infinite ease-in-out;
+}
+
+.logo-scribble {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #1a1a1a;
+  margin-top: 4px;
+}
+
+/* Action Button */
+.echo-alert-zone {
+  position: absolute;
+  right: 0;
+}
+
+.chime-trigger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #2b45a2;
+  padding: 8px;
+}
+
+.bell-vibe {
+  width: 28px;
+  height: 28px;
+  transition: rotate 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.bell-vibe:hover {
+  rotate: 15deg;
+}
+
+/* Tablet Overrides */
+@media (min-width: 768px) {
+  .glitter-container {
+    height: 100px;
+    padding: 0 40px;
+  }
+  
+  .planet-core {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .logo-scribble {
+    font-size: 16px;
+  }
+}
+
+/* Animations */
+@keyframes pulse-glow {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.15); opacity: 0.8; }
+}
+
+/* Hiding for large screens/Desktop to stay "Mobile First" */
+@media (min-width: 1025px) {
+  .kredit-top-bar {
+    display: none;
+  }
+}
+.logo{
+    width: 12%;
+}
