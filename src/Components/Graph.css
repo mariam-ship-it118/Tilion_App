@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+  --bg-creme: #fffce0;
+  --bar-blue-light: #adc9ff;
+  --bar-red-alert: #ff5c5c;
+  --bar-blue-deep: #3b4ba0;
+  --text-main: #0a1332;
+  --text-sub: #3b4ba0;
+}
+
+/* Base styles for the student project */
+.zone-wrapper {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-creme);
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+/* Hidden SEO block */
+.hidden-metadata {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.main-board-container {
+  width: 100%;
+  max-width: 450px;
+}
+
+.title-text-primary {
+  font-weight: 700;
+  font-size: 28px;
+  color: var(--text-main);
+  margin: 0 0 8px 0;
+}
+
+.subtitle-text-secondary {
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--text-sub);
+  margin: 0 0 40px 0;
+}
+
+/* Grid Layout for bars */
+.visual-data-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 200px;
+  border-top: 1px dashed rgba(59, 75, 160, 0.1);
+  position: relative;
+}
+
+/* Background guide lines */
+.visual-data-grid::before {
+  content: '';
+  position: absolute;
+  top: 33%;
+  left: 0;
+  right: 0;
+  border-top: 1px dashed rgba(59, 75, 160, 0.1);
+}
+
+.column-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 12%;
+}
+
+.bar-track {
+  height: 160px;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.bar-fill {
+  width: 100%;
+  border-radius: 8px;
+  /* Slight growth animation for UX class */
+  animation: growUp 0.8s ease-out forwards;
+  transform-origin: bottom;
+}
+
+.fill-regular { background-color: var(--bar-blue-light); }
+.fill-peak { background-color: var(--bar-red-alert); }
+.fill-current { background-color: var(--bar-blue-deep); }
+
+.label-bottom {
+  margin-top: 12px;
+  font-size: 14px;
+  color: var(--text-sub);
+  font-weight: 400;
+}
+
+/* Tablet & Phone Specific viewports */
+@media (max-width: 1024px) {
+  .main-board-container {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .title-text-primary { font-size: 22px; }
+  .label-bottom { font-size: 12px; }
+  .column-unit { width: 13%; }
+}
+
+/* Smooth entry animation */
+@keyframes growUp {
+  from {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+  to {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}

@@ -19,6 +19,7 @@ import AccountScreen from './Pages/Accounts';
 import TilionWelcome from './Pages/Accounts';
 import HomeParent from './Pages/Parent/HomeParent';
 import ParentControl from './Pages/Parent/ParentControl';
+import DiscoveryZone from './Pages/Parent/ScreenTime';
 
 
 
@@ -47,6 +48,7 @@ const RoutingApp = () => {
 
 <Route path="/homeparent" element={<HomeParent/>} />
 <Route path="/parentcontrol" element={<ParentControl/>} />
+<Route path="/screentime" element={<DiscoveryZone/>} />
 
       </Routes>
     </Router>

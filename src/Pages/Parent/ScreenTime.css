@@ -1,0 +1,125 @@
+/* Styling for Mobile & Tablet only */
+.squad-discovery-root {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fdfbf0;
+  padding: 20px;
+  border-radius: 24px;
+  margin: 10px;
+}
+
+.stealth-meta-data {
+  display: none; /* SEO indexing only */
+}
+
+.section-shout {
+  font-weight: 700;
+  color: #0d1b3e;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* Horizontal scrolling for friends - feels native on phones */
+.scroll-horizon {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 15px;
+  scrollbar-width: none; /* Hide scrollbar for clean UX */
+}
+
+.avatar-capsule {
+  flex: 0 0 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: slide-up-fade 0.5s ease-out;
+}
+
+.profile-halo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 3px solid #0d1b3e;
+  position: relative;
+  box-shadow: 4px 4px 0px #0d1b3e;
+}
+
+.rank-badge {
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+  background: #33439f;
+  color: white;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.handle-text {
+  font-size: 13px;
+  font-weight: 600;
+  margin: 10px 0;
+  color: #0d1b3e;
+}
+
+.zap-add-btn {
+  background: #adc6ff;
+  border: 2px solid #0d1b3e;
+  border-radius: 12px;
+  padding: 4px 12px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+.zap-add-btn:active {
+  transform: scale(0.9);
+}
+
+/* Quest Component */
+.daily-quest-card {
+  margin-top: 30px;
+  background: #ffffff;
+  border: 2px solid #0d1b3e;
+  border-radius: 18px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.quest-info h4 { margin: 0; color: #33439f; }
+.quest-info p { margin: 5px 0; font-size: 14px; opacity: 0.8; }
+
+.progress-track {
+  height: 10px;
+  background: #eee;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.progress-fill {
+  width: 40%;
+  height: 100%;
+  background: #f24e4e;
+  animation: fill-up 1.5s ease-in-out;
+}
+
+/* Tablet adjustments */
+@media (min-width: 768px) {
+  .squad-discovery-root { padding: 40px; }
+  .profile-halo { width: 90px; height: 90px; }
+  .handle-text { font-size: 15px; }
+}
+
+/* Student-style simple animations */
+@keyframes slide-up-fade {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fill-up {
+  from { width: 0; }
+  to { width: 40%; }
+}
