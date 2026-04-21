@@ -40,7 +40,7 @@ const TilionWelcome = () => {
         </div>
 
         <section className="profile-selection-grid">
-<Link to="/home">
+<Link to="/activityselection">
           <div className="user-entity-card">
             <div className="avatar-frame-border">
               <img src={ChildProfile} alt="Ahmed Profile" className="profile-visual-element" />

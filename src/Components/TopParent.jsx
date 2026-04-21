@@ -1,8 +1,12 @@
 import React from 'react';
 import './TopParent.css';
 import Logo from '../Assets/logo_2.svg';
+import LangIcon from '../Assets/lang.svg';
+import { useLanguage } from '../LanguageContext';
 
 const TopParent = () => {
+  const { language, toggleLanguage } = useLanguage();
+
   return (
     <header className="kredit-top-bar">
       {}
@@ -11,13 +15,29 @@ const TopParent = () => {
       </h1>
 
       <div className="glitter-container">
-        {}
         
-         
-          
-            <img src={Logo} alt="" className='logo' />
-       
-      
+        <div 
+          onClick={toggleLanguage} 
+          style={{ 
+            display: 'flex', 
+            justifyContent: 'center', 
+            alignItems: 'center', 
+            background: '#EADB25', 
+            color: '#1A1F36', 
+            fontWeight: '700',
+            fontSize: '16px',
+            fontFamily: 'Montserrat, sans-serif',
+            borderRadius: '50%',
+            width: '40px',
+            height: '40px',
+            cursor: 'pointer',
+            marginRight: '12px'
+          }}
+        >
+          <img src={LangIcon} alt="Toggle Language" style={{ width: '24px', height: '24px' }} />
+        </div>
+
+        <img src={Logo} alt="" className='logo' />
 
         {/* Interaction area */}
         <div className="echo-alert-zone">

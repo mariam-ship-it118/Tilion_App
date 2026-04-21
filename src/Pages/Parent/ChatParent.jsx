@@ -78,7 +78,7 @@ const ChatParent = () => {
 
       </div>
     </div>
-
+<NavParent/>
     </>
   );
 };

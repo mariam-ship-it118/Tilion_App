@@ -1,9 +1,11 @@
 
 import {BrowserRouter, Link} from 'react-router-dom';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { LanguageProvider } from './LanguageContext';
 import SplashScreen from './Components/Splash';
 import SignupPage from './Pages/SignUp';
 import SignupPageTwo from './Pages/SignUpTwo';
+import ActivitySelection from './Pages/ActivitySelection';
 import Login from './Pages/Login';
 import Home from './Pages/Child/Home';
 import Messages from './Pages/Child/Messages';
@@ -24,16 +26,19 @@ import Requests from './Pages/Parent/Requests';
 import ChatParent from './Pages/Parent/ChatParent';
 import ActivityDashboard from './Pages/Parent/ActivityDshboard';
 import KidsSocialFeed from './Pages/Parent/Community';
+import ProfileParent from './Pages/Parent/ProfileParent';
 
 
 
 const RoutingApp = () => {
     return ( <>
+    <LanguageProvider>
     <Router>
       <Routes>
         <Route path="/" element={<SplashScreen/>} />
         <Route path="/signup" element={<SignupPage/>} />
         <Route path="/signup2" element={<SignupPageTwo/>} />
+        <Route path="/activityselection" element={<ActivitySelection/>} />
       <Route path="/login" element={<Login/>} />
        <Route path="/accounts" element={<TilionWelcome/>} />
       <Route path="/home" element={<Home/>} />
@@ -57,10 +62,12 @@ const RoutingApp = () => {
 <Route path="/chatparent/:userId" element={<ChatParent />} />
 <Route path="/activityparent" element={<ActivityDashboard />} />
 <Route path="/community" element={<KidsSocialFeed />} />
+<Route path="/profileparent" element={<ProfileParent />} />
     
     
       </Routes>
     </Router>
+    </LanguageProvider>
     
     </> );
 }
