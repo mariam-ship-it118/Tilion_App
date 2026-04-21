@@ -1,6 +1,6 @@
-/* SocialFeedBundle.css */
 
-/* Global app container - matches the cream background */
+
+
 .content-app-wrapper {
   background-color: #fffdec;
   min-height: 100vh;
@@ -12,12 +12,12 @@
 
 .app-post-container {
   width: 100%;
-  max-width: 500px; /* Tablet sizing */
+  max-width: 500px; 
 }
 
-/* Typography */
+
 .activity-title-text {
-  color: #3f51b5; /* Indigo blue */
+  color: #3f51b5; 
   font-size: 1.5rem;
   font-weight: 800;
   margin-bottom: 20px;
@@ -31,7 +31,7 @@
   margin-bottom: 12px;
 }
 
-/* Media Containers */
+
 .media-frame-primary, .player-aspect-box, .step-gallery-grid {
   margin: 0 0 20px 0;
   width: 100%;
@@ -44,7 +44,7 @@
   display: block;
 }
 
-/* Video Player UI */
+
 .player-aspect-box {
   position: relative;
   border-radius: 28px;
@@ -79,7 +79,7 @@
   height: 0;
   border-top: 20px solid transparent;
   border-bottom: 20px solid transparent;
-  border-left: 35px solid #f6e02d; /* Yellow from design */
+  border-left: 35px solid #f6e02d; 
   margin-left: 5px;
 }
 
@@ -88,7 +88,7 @@
   aspect-ratio: 16 / 9;
 }
 
-/* Instruction Grid with Floating Icon */
+
 .grid-media-canvas {
   position: relative;
 }
@@ -113,7 +113,7 @@
   height: 24px;
 }
 
-/* Tablet Optimizations */
+
 @media (min-width: 768px) {
   .app-post-container {
     max-width: 600px;

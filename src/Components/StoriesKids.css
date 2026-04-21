@@ -1,41 +1,41 @@
-/* Container for the stories - fits phone/tablet/desktop */
+
 .play-pals-container {
   width: 100%;
   padding: 1rem 0;
-  background-color: #FFFCDD; /* Light cream background from your image */
+  background-color: #FFFCDD; 
   overflow: hidden;
 }
 
-/* Scrollable track with hidden scrollbars */
+
 .buddy-scroll-track {
   display: flex;
   gap: 1.5rem;
   padding: 0 1rem;
   overflow-x: auto;
   scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch; /* Smooth scroll for iOS */
-  scrollbar-width: none; /* Hide for Firefox */
+  -webkit-overflow-scrolling: touch; 
+  scrollbar-width: none; 
 }
 
 .buddy-scroll-track::-webkit-scrollbar {
-  display: none; /* Hide for Chrome/Safari */
+  display: none; 
 }
 
-/* Individual Story Item */
+
 .buddy-story-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   cursor: pointer;
   transition: transform 0.2s ease;
-  flex-shrink: 0; /* Prevents squishing on small screens */
+  flex-shrink: 0; 
 }
 
 .buddy-story-wrapper:active {
-  transform: scale(0.92); /* Click feedback */
+  transform: scale(0.92); 
 }
 
-/* The Animated Gradient Ring */
+
 .magic-ring {
   padding: 3px;
   border-radius: 50%;
@@ -47,12 +47,12 @@
 }
 
 .buddy-story-wrapper:hover .magic-ring {
-  rotate: 15deg; /* Slight playful tilt on hover */
+  rotate: 15deg; 
 }
 
-/* Avatar Image Container */
+
 .avatar-bubble {
-  width: 70px;  /* Phone size */
+  width: 70px;  
   height: 70px;
   background: white;
   border-radius: 50%;
@@ -66,16 +66,16 @@
   object-fit: cover;
 }
 
-/* Name text */
+
 .buddy-name {
   margin-top: 0.5rem;
-  font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif; /* Kids-friendly fonts */
+  font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif; 
   font-weight: 600;
   color: #3b4d9b;
   font-size: 0.9rem;
 }
 
-/* Tablet & Desktop Adjustments */
+
 @media (min-width: 768px) {
   .avatar-bubble {
     width: 90px;

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './CallScreen.css';
 import { Link } from 'react-router-dom';
-// img
+
 import ProfilePic from "../../Assets/friend.svg";
 import Mute from "../../Assets/mute.svg";
 import Video from "../../Assets/vidswitch.svg";
@@ -19,12 +19,12 @@ const CallScreen = () => {
   const [isLive, setIsLive] = useState(false);
 
   useEffect(() => {
-    // Phase 1: Calling to Ringing
+    
     const ringTimer = setTimeout(() => {
       setStatus('Ringing...');
     }, 2000);
 
-    // Phase 2: Ringing to Active Call
+    
     const connectTimer = setTimeout(() => {
       setStatus('');
       setIsLive(true);

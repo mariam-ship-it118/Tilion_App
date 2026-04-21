@@ -6,7 +6,7 @@ const TopBar = () => {
   return (
     <header className="playroom-top-header">
       
-      {/* Profile Section */}
+      {}
       <div className="friend-profile-wrap">
         <img 
           src={Profile} 
@@ -15,7 +15,7 @@ const TopBar = () => {
         />
       </div>
 
-      {/* Logo Section */}
+      {}
       <div className="cool-app-branding">
         <img 
           src={MiniLogo} 
@@ -24,7 +24,7 @@ const TopBar = () => {
         />
       </div>
 
-      {/* Notifications Section */}
+      {}
       <div className="news-alert-wrap">
         <button className="ding-ding-button" aria-label="Notifications">
           <svg 

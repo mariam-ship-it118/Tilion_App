@@ -6,7 +6,7 @@ import Crochet from '../Assets/crochet.svg';
 import French from '../Assets/french.svg';
 import Arabic from '../Assets/arabic.svg';
 import Doodling from '../Assets/doodling.svg';
-// icons
+
 import Croch from '../Assets/cut.svg';
 import Paint from '../Assets/paint.svg';
 import Lang from '../Assets/lang.svg';

@@ -5,7 +5,7 @@ const TimeOutPopUp = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    // Set timer for 30 minutes (30 * 60 * 1000 ms)
+    
     const timer = setTimeout(() => {
       setIsVisible(true);
     }, 1800000);
@@ -18,10 +18,10 @@ const TimeOutPopUp = () => {
   return (
     <div className="popup-overlay">
       <div className="popup-container">
-        {/* Cat Illustration Placeholder */}
+        {}
         <div className="cat-illustration-container">
            <div className="cat-character">
-             {/* You can replace this div with an <img /> tag for the cat */}
+             {}
              🐱
            </div>
         </div>

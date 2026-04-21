@@ -1,10 +1,10 @@
-/* Student-style CSS: Simple and descriptive classes */
+
 
 .berry-wrapper {
   background: linear-gradient(180deg, #3f51b5 0%, #303f9f 100%);
   height: 100vh;
   width: 100%;
-  max-width: 450px; /* Limits width on Tablet to look like a phone app */
+  max-width: 450px; 
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -65,7 +65,7 @@
   margin-top: 10px;
 }
 
-/* Icons Grid */
+
 .cloud-action-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -95,7 +95,7 @@
   opacity: 0.5;
 }
 
-/* Hang up Button */
+
 .berry-footer {
   padding-bottom: 40px;
 }
@@ -116,7 +116,7 @@
   cursor: pointer;
 }
 
-/* Animations */
+
 .pulse-anim {
   animation: pulse-text 1.5s infinite ease-in-out;
 }
@@ -127,7 +127,7 @@
   100% { opacity: 0.6; }
 }
 
-/* Tablet and Phone responsiveness */
+
 @media (min-width: 768px) {
   .berry-wrapper {
     max-width: 500px;

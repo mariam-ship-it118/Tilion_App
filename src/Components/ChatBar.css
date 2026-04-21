@@ -11,7 +11,7 @@
 .input-wrapper {
   display: flex;
   align-items: center;
-  background-color: #0d122b; /* Darker navy from image */
+  background-color: #0d122b; 
   border-radius: 40px;
   padding: 8px 16px;
   gap: 12px;
@@ -21,7 +21,7 @@
 
 .text-field-container {
   flex: 1;
-  background-color: #cbd5f0; /* Light blue/grey input area */
+  background-color: #cbd5f0; 
   border-radius: 30px;
   height: 44px;
   display: flex;
@@ -51,11 +51,11 @@
 }
 
 .plus-btn.active {
-  transform: rotate(45deg); /* Visual cue that menu is open */
+  transform: rotate(45deg); 
   color: #bfc9f2;
 }
 
-/* Popup Menu Styling */
+
 .attachment-menu {
   position: absolute;
   bottom: 80px;
@@ -91,7 +91,7 @@
 
 .menu-label { font-size: 0.9rem; }
 
-/* Animations */
+
 @keyframes popUp {
   from { opacity: 0; transform: translateY(20px) scale(0.8); }
   to { opacity: 1; transform: translateY(0) scale(1); }
@@ -102,7 +102,7 @@
   from { opacity: 0; transform: translateX(10px); }
 }
 
-/* Tablet sizing */
+
 @media (min-width: 768px) {
   .input-wrapper { height: 70px; padding: 10px 25px; }
   .text-field-container { height: 50px; }

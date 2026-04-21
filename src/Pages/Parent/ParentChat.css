@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+  --primary-blue: #7b96ff;
+  --bubble-dark: #0a1128;
+  --soft-white: #f0f4f8;
+  --status-red: #ff5c5c;
+  --text-main: #333;
+}
+
+
+
+.main-viewport-container {
+  width: 100%;
+  max-width: 480px;
+  height: 95vh;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.app-canvas-wrapper {
+  width: 100%;
+  height: 100%;
+  background-image: url('../../Assets/ChatParentbg.svg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  animation: fadeInApp 0.8s ease-out;
+}
+
+@keyframes fadeInApp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(1deg); }
+  75% { transform: rotate(-1deg); }
+}
+
+.app-top-nav {
+  padding: 40px 20px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user-identity-hub {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-avatar-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.user-display-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--bubble-dark);
+  text-align: center;
+}
+
+.online-indicator {
+  font-size: 0.75rem;
+  color: var(--primary-blue);
+}
+
+.interaction-stream {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.timestamp-marker {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #666;
+  margin: 10px 0;
+}
+
+.message-bubble {
+  max-width: 70%;
+  padding: 12px 18px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  position: relative;
+  animation: popIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes popIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.incoming-style {
+  background-color: var(--primary-blue);
+  color: white;
+  align-self: flex-start;
+  border-bottom-left-radius: 4px;
+}
+
+.outgoing-style {
+  background-color: var(--bubble-dark);
+  color: white;
+  align-self: flex-end;
+  border-bottom-right-radius: 4px;
+}
+
+
+.feedback-overlay-stack {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.status-card-item {
+  width: 90%;
+  padding: 15px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  animation: wiggle 3s infinite ease-in-out;
+}
+
+.success-variant {
+  background-color: var(--bubble-dark);
+  color: white;
+}
+
+.processing-variant {
+  background-color: #f9f9f9;
+  color: #333;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.mini-card-avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.action-pill-btn {
+  padding: 8px 25px;
+  border-radius: 20px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.ghost-white { background: #eef2ff; color: #333; }
+.alert-red { background: var(--status-red); color: white; }
+
+.app-input-dock {
+  padding: 20px;
+  background-color: var(--bubble-dark);
+  margin: 15px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.input-field-bar {
+  flex: 1;
+  background: #eef2ff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: #888;
+  font-size: 0.85rem;
+}
+
+.input-utility-icons {
+  display: flex;
+  gap: 15px;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .main-viewport-container {
+    max-width: 600px;
+    height: 80vh;
+  }
+}

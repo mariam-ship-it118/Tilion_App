@@ -4,12 +4,7 @@ import NavParent from '../../Components/NavParent';
 import TopBar from '../../Components/TopBar';
 import TopParent from '../../Components/TopParent';
 import {Link} from 'react-router-dom';
-/**
- * SEO Segment:
- * Title: KidsConnect Parental Dashboard
- * Meta: Secure management tools for parents of kids 7-13. 
- * Manage screen time, friend requests, and wellness activities.
- */
+
 
 const ParentControl = () => {
   const settings = [

@@ -1,11 +1,11 @@
-/* Custom properties for colors and sizes */
+
 :root {
-  --primary-color: #FFFCDD; /* background color */
-  --text-color: #001f3f; /* text color */
-  --accent-color: #3b82f6; /* buddy tag color, like count color */
-  --like-color: #ef4444; /* liked heart color */
-  --heart-animation-color: #ef4444; /* heart animation color */
-  --font-family: 'Poppins', sans-serif; /* kid friendly font */
+  --primary-color: #FFFCDD; 
+  --text-color: #001f3f; 
+  --accent-color: #3b82f6; 
+  --like-color: #ef4444; 
+  --heart-animation-color: #ef4444; 
+  --font-family: 'Poppins', sans-serif; 
   --post-width: 90%;
   --post-border-radius: 12px;
   --post-padding: 16px;

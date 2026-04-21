@@ -8,7 +8,7 @@ const KidsSocialPost = ({ profilePic, username, nickname, postDate, postTime, ca
 
   const handleDoubleTap = (e) => {
     const now = Date.now();
-    const DOUBLE_TAP_DELAY = 300; // time in ms
+    const DOUBLE_TAP_DELAY = 300; 
     if (now - lastTap < DOUBLE_TAP_DELAY) {
       handleLike();
     }

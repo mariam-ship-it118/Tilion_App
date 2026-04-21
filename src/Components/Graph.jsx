@@ -2,7 +2,7 @@ import React from 'react';
 import './Graph.css';
 
 const UserActivityMetrics = () => {
-  // Data representing the heights for the bar visualization
+  
   const dailyStats = [
     { day: 'Mon', height: '55%', type: 'regular' },
     { day: 'Tue', height: '40%', type: 'regular' },
@@ -15,7 +15,7 @@ const UserActivityMetrics = () => {
 
   return (
     <div className="zone-wrapper">
-      {/* SEO Section: Vital for discovery in the 7-13 age bracket */}
+      {}
       <section className="hidden-metadata">
         <h1>Safe Social Networking for Kids</h1>
         <p>The premier monitored social media app for ages 7 to 13. Track your digital wellness and connect safely.</p>

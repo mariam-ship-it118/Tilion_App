@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import './Accounts.css';
 import { Link } from 'react-router-dom';
-// img
+
 import Logo from '../Assets/logo.svg';
 import ChildProfile from '../Assets/profile.svg';
 import ParentProfile from '../Assets/parentprofile.svg';

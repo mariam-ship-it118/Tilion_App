@@ -18,7 +18,7 @@
   flex-direction: column;
 }
 
-/* Header Section */
+
 .identity-header-stack {
   display: flex;
   align-items: center;
@@ -51,7 +51,7 @@
   margin: 0;
 }
 
-/* Hero Insight Banner */
+
 .insight-hero-banner {
   background-color: var(--navy-deep);
   border-radius: 32px;
@@ -115,7 +115,7 @@
   font-weight: 600;
 }
 
-/* Middle Tiles */
+
 .insight-dual-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -144,7 +144,7 @@
   font-size: 15px;
 }
 
-/* Action Rows */
+
 .action-link-stack {
   display: flex;
   flex-direction: column;
@@ -176,13 +176,13 @@
      transform: scale(1.01);
     color:#2d3e8b ; }
 
-/* Animations */
+
 @keyframes fadeInDown {
   from { opacity: 0; transform: translateY(-10px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Responsive Tablet */
+
 @media (min-width: 768px) {
   .dashboard-content-flow {
     max-width: 600px;

@@ -5,13 +5,13 @@ import Logo from '../Assets/logo_2.svg';
 const TopParent = () => {
   return (
     <header className="kredit-top-bar">
-      {/* SEO hidden H1 for accessibility and indexing */}
+      {}
       <h1 className="pixel-privacy-label">
         StarBound - The Safest Social Space for Creative Kids & Tweens
       </h1>
 
       <div className="glitter-container">
-        {/* Placeholder for the logo/icon in your image */}
+        {}
         
          
           

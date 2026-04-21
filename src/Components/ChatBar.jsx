@@ -14,7 +14,7 @@ const ChatBar = () => {
 
   return (
     <div className="chat-bar-container">
-      {/* Attachment Popup */}
+      {}
       {showMenu && (
         <div className="attachment-menu">
           {menuItems.map((item, index) => (

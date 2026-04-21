@@ -1,4 +1,4 @@
-/* Import fonts to match the design */
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Cinzel:wght@700&display=swap');
 
 * {
@@ -8,7 +8,7 @@
 }
 
 :root {
-  --bg-color: #FCF8E8; /* Pale cream/yellow background */
+  --bg-color: #FCF8E8; 
   --text-dark: #1A1F36;
   --primary-blue: #374BA1;
   --button-bg: #0C1226;
@@ -18,7 +18,7 @@
 
 
 
-/* Main Container Setup */
+
 .signup-container {
     display: flex;
     overflow: hidden;
@@ -31,7 +31,7 @@
     min-height: 100vh;
   flex-direction: column;
   width: 100%;
-  max-width: 450px; /* Tablet constraint */
+  max-width: 450px; 
   min-height: 100vh;
   background-color: var(--bg-color);
   padding: 24px;
@@ -39,7 +39,7 @@
   overflow: hidden;
 }
 
-/* Navigation */
+
 .top-nav {
   padding-top: 16px;
   padding-bottom: 24px;
@@ -58,7 +58,7 @@
   transform: translateX(-4px);
 }
 
-/* Main Content Alignment */
+
 .content-wrapper {
   flex: 1;
   display: flex;
@@ -79,7 +79,7 @@
 }
 
 .brand-title {
-  font-family: 'Cinzel', serif; /* Stylized brand font */
+  font-family: 'Cinzel', serif; 
   font-size: 26px;
   letter-spacing: 2px;
   color: var(--text-dark);
@@ -93,7 +93,7 @@
   margin-bottom: 36px;
 }
 
-/* Form Styles */
+
 .signup-form {
   width: 100%;
   display: flex;
@@ -149,7 +149,7 @@
   text-decoration: underline;
 }
 
-/* Footer / Button Area */
+
 .footer {
   display: flex;
   justify-content: center;
@@ -182,9 +182,7 @@
   box-shadow: 0 2px 8px rgba(12, 18, 38, 0.2);
 }
 
-/* =========================================
-   ANIMATIONS
-========================================= */
+
 .fade-in {
   animation: fadeIn 0.5s ease-out;
 }
@@ -233,9 +231,7 @@
   100% { transform: translateY(0px); }
 }
 
-/* =========================================
-   TABLET / DESKTOP RESPONSIVENESS
-========================================= */
+
 @media (min-width: 768px) {
   .signup-container {
     min-height: auto;

@@ -1,15 +1,15 @@
-/* Layout & Container */
+
 .chat-header {
   display: flex;
   align-items: center;
-  background-color: #0a0e27; /* Dark navy from image */
+  background-color: #0a0e27; 
   padding: 10px 16px;
   height: 70px;
   gap: 12px;
   animation: slideDown 0.4s ease-out;
 }
 
-/* Common Button Resets */
+
 button {
   background: none;
   border: none;
@@ -24,9 +24,9 @@ button:active {
   transform: scale(0.95);
 }
 
-/* Profile Section Button */
+
 .profile-link-btn {
-  flex: 1; /* Pushes action icons to the right */
+  flex: 1; 
   text-align: left;
   gap: 12px;
 }
@@ -51,12 +51,12 @@ button:active {
 }
 
 .active-status {
-  color: #c4d600; /* Yellow-green from image */
+  color: #c4d600; 
   font-size: 0.85rem;
   font-weight: 500;
 }
 
-/* Action Buttons (Right Side) */
+
 .actions {
   display: flex;
   gap: 20px;
@@ -74,7 +74,7 @@ button:active {
   transform: translateY(-2px);
 }
 
-/* CSS Chevron for the back button */
+
 .chevron-left {
   border: solid white;
   border-width: 0 3px 3px 0;
@@ -83,7 +83,7 @@ button:active {
   transform: rotate(135deg);
 }
 
-/* Entrance Animation */
+
 @keyframes slideDown {
   from {
     transform: translateY(-20px);
@@ -95,7 +95,7 @@ button:active {
   }
 }
 
-/* Tablet Scaling */
+
 @media (min-width: 768px) {
   .chat-header {
     height: 85px;

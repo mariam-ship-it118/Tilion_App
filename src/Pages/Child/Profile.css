@@ -1,8 +1,8 @@
-/* ProfileStyles.css */
 
-/* Global Mobile/Tablet Wrapper */
+
+
 .app-main-layout {
-  background-color: #fffdec; /* Light cream from image */
+  background-color: #fffdec; 
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -12,11 +12,11 @@
 
 .profile-scroll-area {
   width: 100%;
-  max-width: 450px; /* Tablet constraint */
+  max-width: 450px; 
   text-align: center;
 }
 
-/* Header UI */
+
 .brand-header-zone {
   margin-bottom: 25px;
   animation: slideDown 0.6s ease-out;
@@ -34,7 +34,7 @@
   color: #2b3a67;
 }
 
-/* Avatar Animation */
+
 .avatar-frame-outer {
   width: 130px;
   height: 130px;
@@ -77,7 +77,7 @@
   opacity: 0.4;
 }
 
-/* Stats Styling */
+
 .social-stats-row {
   display: flex;
   gap: 15px;
@@ -88,7 +88,7 @@
   flex: 1;
   background-color: #e8edff;
   padding: 15px;
-  border-radius: 25px; /* UX Student style big round corners */
+  border-radius: 25px; 
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
@@ -106,7 +106,7 @@
   margin: 0;
 }
 
-/* Detail List */
+
 .personal-info-block {
   text-align: left;
   padding: 0 10px;
@@ -129,7 +129,7 @@
   margin: 0;
 }
 
-/* Badge Section */
+
 .badges-footer-section {
   text-align: left;
   padding: 0 10px 40px;
@@ -143,7 +143,7 @@
 }
 
 .age-pill-chip {
-  background-color: #e6f132; /* Yellow from image */
+  background-color: #e6f132; 
   padding: 8px 18px;
   border-radius: 20px;
   font-weight: 700;
@@ -156,13 +156,13 @@
   background-color: #f0f75b;
 }
 
-/* Simple Animations */
+
 @keyframes slideDown {
   from { opacity: 0; transform: translateY(-20px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Tablet Resizing */
+
 @media (min-width: 768px) {
   .profile-scroll-area {
     max-width: 550px;

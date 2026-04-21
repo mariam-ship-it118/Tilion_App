@@ -5,14 +5,14 @@ import { Link } from 'react-router-dom';
 const SplashScreen = () => {
   return (
     <div className="app-container">
-      {/* Animated abstract wavy background */}
+      {}
       <div className="wavy-background"></div>
 
       <main className="content-wrapper">
         <section className="logo-section">
           <div className="logo-graphic">
             <img src={Logo} alt="TILION app" />
-              {/* Yellow Star */}
+              {}
               <path 
                 className="animated-star"
                 d="M10,65 Q40,65 40,35 Q40,65 70,65 Q40,65 40,95 Q40,65 10,65 Z" 
@@ -21,7 +21,7 @@ const SplashScreen = () => {
           
           </div>
           
-          {/* <h1 className="brand-title">TILION</h1> */}
+          {}
         </section>
 
         <section className="bottom-section">

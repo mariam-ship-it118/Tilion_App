@@ -5,7 +5,7 @@ import Profile from "../../Assets/profile.svg";
 import NavBar from '../../Components/NavBar';
 
 const UserProfileView = () => {
-  // Student-style simple array for badges
+  
   const ageBadges = ['9y', '10y', '11y', '12y', '13y'];
   const activeBadge = '11y';
 
@@ -18,14 +18,14 @@ const UserProfileView = () => {
     <div className="app-main-layout">
       <main className="profile-scroll-area">
         
-        {/* Top Branding Section */}
+        {}
         <header className="brand-header-zone">
           <div className="brand-logo-graphic">
             <img src={Logo} alt="KidSocial App Logo" className="logo-img-asset" />
           </div>
         </header>
 
-        {/* User Identity Section */}
+        {}
         <section className="user-intro-card">
           <div className="avatar-frame-outer">
             <img 
@@ -39,7 +39,7 @@ const UserProfileView = () => {
           <div className="curved-divider-line"></div>
         </section>
 
-        {/* Stats Grid */}
+        {}
         <section className="social-stats-row">
           <article className="stat-bubble-item">
             <h2 className="stat-label-blue">My Friends</h2>
@@ -51,7 +51,7 @@ const UserProfileView = () => {
           </article>
         </section>
 
-        {/* Info Details Section */}
+        {}
         <section className="personal-info-block">
           <div className="info-entry-unit">
             <h3 className="field-title-bold">Name</h3>
@@ -69,7 +69,7 @@ const UserProfileView = () => {
           </div>
         </section>
 
-        {/* Age Badge Footer */}
+        {}
         <footer className="badges-footer-section">
           <h3 className="field-title-bold">Age badge</h3>
           <div className="badge-flex-wrap">

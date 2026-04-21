@@ -3,7 +3,7 @@ import './FriendsProfile.css';
 import TopChat from '../../Components/TopChat';
 
 const FriendsProfile = () => {
-  const [activeModal, setActiveModal] = useState(null); // 'block', 'report', or null
+  const [activeModal, setActiveModal] = useState(null); 
 
   const settings = [
     { label: 'Best friend', type: 'nav' },
@@ -36,7 +36,7 @@ const FriendsProfile = () => {
         ))}
       </div>
 
-      {/* Confirmation Modal */}
+      {}
       {activeModal && (
         <div className="modal-overlay" onClick={closeModal}>
           <div className="modal-content" onClick={e => e.stopPropagation()}>

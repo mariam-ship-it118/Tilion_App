@@ -11,7 +11,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  max-width: 500px; /* Tablet standard width */
+  max-width: 500px; 
   margin: 0 auto;
   width: 100%;
 }
@@ -35,10 +35,10 @@
 }
 
 .settings-item.danger {
-  color: #ff7e7e; /* The soft red from your image */
+  color: #ff7e7e; 
 }
 
-/* Modal Styling */
+
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -85,7 +85,7 @@
 .modal-btn.cancel { background: #edf2f7; color: #4a5568; }
 .modal-btn.confirm { background: #ff7e7e; color: white; }
 
-/* Animations */
+
 @keyframes slideInRight {
   from { opacity: 0; transform: translateX(-15px); }
   to { opacity: 1; transform: translateX(0); }
@@ -96,7 +96,7 @@
   to { opacity: 1; transform: scale(1); }
 }
 
-/* Tablet scaling */
+
 @media (min-width: 768px) {
   .settings-item { font-size: 1.4rem; padding: 20px 10px; }
 }

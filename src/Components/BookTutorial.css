@@ -1,14 +1,14 @@
-/* CraftGuide.css */
+
 
 .guide-wrapper {
-  background-color: #fffde7; /* Soft yellow background from image */
+  background-color: #fffde7; 
   min-height: 100vh;
   padding: 24px 16px;
   font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
 
 .guide-container {
-  max-width: 600px; /* Optimal for tablets */
+  max-width: 600px; 
   margin: 0 auto;
 }
 
@@ -17,13 +17,13 @@
 }
 
 .section-title {
-  color: #4a5ab5; /* Purple-blue heading color */
+  color: #4a5ab5; 
   font-size: 1.25rem;
   font-weight: 800;
   margin-bottom: 16px;
 }
 
-/* Materials & Checkboxes */
+
 .materials-list {
   list-style: none;
   padding: 0;
@@ -42,7 +42,7 @@
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  background-color: #d1d5db; /* Grey circle */
+  background-color: #d1d5db; 
   margin-right: 12px;
   margin-top: 3px;
   flex-shrink: 0;
@@ -70,7 +70,7 @@
   line-height: 1.4;
 }
 
-/* Paper Sizes */
+
 .sizes-list {
   padding-left: 20px;
   color: #374151;
@@ -81,13 +81,13 @@
   font-size: 0.95rem;
 }
 
-/* Steps */
+
 .step-block {
   margin-bottom: 24px;
 }
 
 .step-heading {
-  color: #2563eb; /* Brighter blue for step numbers */
+  color: #2563eb; 
   font-size: 1rem;
   font-weight: 700;
   margin-bottom: 6px;
@@ -100,7 +100,7 @@
   margin: 0;
 }
 
-/* Examples Box */
+
 .examples-box {
   margin-top: 12px;
   padding-left: 12px;
@@ -116,7 +116,7 @@
   padding-left: 20px;
 }
 
-/* Tablet Optimizations */
+
 @media (min-width: 768px) {
   .guide-container {
     background-color: #ffffff;

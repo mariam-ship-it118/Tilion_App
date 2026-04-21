@@ -7,7 +7,7 @@
   --app-subtext-gray: #d1d5db;
 }
 
-/* ✅ BODY FOR THIS PAGE ONLY */
+
 .tilion-body {
   background-color: var(--app-dark-navy);
   font-family: 'Poppins', sans-serif;
@@ -15,7 +15,7 @@
   color: var(--app-neutral-white);
 }
 
-/* Layout */
+
 .view-viewport-root {
   display: flex;
   flex-direction: column;
@@ -32,7 +32,7 @@
   align-items: center;
 }
 
-/* Navigation */
+
 .app-navigation-container {
   align-self: flex-start;
   margin-bottom: 40px;
@@ -45,7 +45,7 @@
   padding: 8px;
 }
 
-/* Branding */
+
 .branding-asset-wrapper {
   text-align: center;
   margin-bottom: 60px;
@@ -70,7 +70,7 @@
   margin-top: 4px;
 }
 
-/* Grid */
+
 .profile-selection-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -86,7 +86,7 @@
   }
 }
 
-/* Cards */
+
 .user-entity-card {
   display: flex;
   flex-direction: column;
@@ -121,7 +121,7 @@
   text-align: center;
 }
 
-/* Add Button */
+
 .creation-action-btn {
   width: 110px;
   height: 110px;

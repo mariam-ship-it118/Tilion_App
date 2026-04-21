@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Poppins:wght@400;600&display=swap');
 
-/* --- Reset & Base --- */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,7 +8,7 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-/* --- Container & Layout --- */
+
 .app-container {
   position: relative;
   width: 100%;
@@ -25,7 +25,7 @@
   position: relative;
   z-index: 10;
   width: 100%;
-  max-width: 500px; /* Constrains max width for tablets/desktop */
+  max-width: 500px; 
   height: 100vh;
   height: 100dvh;
   display: flex;
@@ -36,7 +36,7 @@
   padding: 12vh 24px 8vh 24px;
 }
 
-/* --- Simulated Wavy Background --- */
+
 .wavy-background {
   position: absolute;
   top: -20%;
@@ -50,11 +50,11 @@
   background-color: #171932;
   animation: slowPan 25s infinite alternate ease-in-out;
   z-index: 1;
-  /* Optional: Adds a slight blur to blend the gradients like waves */
+  
   filter: blur(20px); 
 }
 
-/* --- Top Section: Logo & Title --- */
+
 .logo-section {
   display: flex;
   flex-direction: column;
@@ -90,7 +90,7 @@
   animation: fadeUp 0.8s ease-out forwards;
 }
 
-/* --- Bottom Section: Subtitles & Buttons --- */
+
 .bottom-section {
   width: 100%;
   display: flex;
@@ -148,7 +148,7 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* --- Animations --- */
+
 @keyframes float {
   0% { transform: translateY(0px); }
   50% { transform: translateY(-10px); }
@@ -176,7 +176,7 @@
   }
 }
 
-/* --- Tablet / Larger Screen Adjustments --- */
+
 @media screen and (min-width: 600px) {
   .logo-graphic {
     width: 240px;

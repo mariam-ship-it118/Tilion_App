@@ -5,7 +5,7 @@ import CoverImg from "../Assets/coverimg.svg";
 const SocialFeedBundle = () => {
   const [isPlaying, setIsPlaying] = useState(false);
 
-  // Example handler for the video play button
+  
   const handleMediaPlay = () => {
     setIsPlaying(true);
   };
@@ -13,12 +13,12 @@ const SocialFeedBundle = () => {
   return (
     <main className="content-app-wrapper" role="main">
       <article className="app-post-container">
-        {/* SEO Optimized Heading */}
+        {}
         <header className="post-header-info">
           <h1 className="activity-title-text">Secret keychain</h1>
         </header>
 
-        {/* Primary Hero Image */}
+        {}
         <figure className="media-frame-primary">
           <img 
             src={CoverImg} 
@@ -28,7 +28,7 @@ const SocialFeedBundle = () => {
           />
         </figure>
 
-        {/* Video Tutorial Section */}
+        {}
         <section className="tutorial-v-wrapper" aria-label="DIY Video Tutorial">
           <h2 className="sub-heading-info">Tutorial</h2>
           <div className="player-aspect-box">
@@ -56,7 +56,7 @@ const SocialFeedBundle = () => {
           </div>
         </section>
 
-        {/* Gallery/Instructions Grid */}
+        {}
         <section className="step-gallery-grid" aria-label="Step by step instructions">
           <div className="grid-media-canvas">
             <img 
@@ -64,7 +64,7 @@ const SocialFeedBundle = () => {
               alt="Detailed steps for making a secret keychain journal" 
               className="ui-rounded-img"
             />
-            {/* Camera Icon Overlay */}
+            {}
             <div className="icon-badge-float">
               <svg className="svg-cam-icon" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M4 4h3l2-2h6l2 2h3a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm8 13a5 5 0 1 0 0-10 5 5 0 0 0 0 10z"/>

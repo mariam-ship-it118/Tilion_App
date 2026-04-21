@@ -1,7 +1,7 @@
 import React from 'react';
 import './StoriesKids.css';
 const KidsStoryBar = () => {
-  // Mock data for the stories
+  
   const stories = [
     { id: 1, name: 'Ahmed', img: 'https://placehold.co/100x100/png' },
     { id: 2, name: 'Ahmed', img: 'https://placehold.co/100x100/png' },

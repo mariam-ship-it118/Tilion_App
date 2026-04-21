@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const Login = () => {
   return (
     <div className="signup-container fade-in">
-      {/* Top Navigation */}
+      {}
       <nav className="top-nav">
         <button className="back-btn" aria-label="Go back">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -15,16 +15,16 @@ const Login = () => {
         </button>
       </nav>
 
-      {/* Main Content */}
+      {}
       <div className="content-wrapper correct">
         <div className="logo-container float-anim">
-          {/* Custom SVG recreating the Tilion Logo */}
+          {}
          <img src={Logo} alt="" />
         </div>
 
         <h2 className="welcome-title slide-up">Welcome to Tilion</h2>
 
-        {/* Signup Form */}
+        {}
         <form className="signup-form slide-up-delayed">
        
           
@@ -45,7 +45,7 @@ const Login = () => {
         </form>
       </div>
 
-      {/* Footer Area */}
+      {}
       <div className="footer slide-up-delayed-2">
         <Link to="/home">
         <button className="next-btn">Next</button>

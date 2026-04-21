@@ -1,32 +1,32 @@
-/* Container to simulate a mobile/tablet header area */
+
 .search-container {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  background-color: #fdfbe2; /* Matching your image background */
+  background-color: #fdfbe2; 
 }
 
 .search-input {
-  /* Dimensions & Responsiveness */
-  width: 90%;
-  max-width: 500px; /* Tablet standard */
-  height: 48px;     /* Comfortable touch target for mobile */
   
-  /* Styling based on your image */
+  width: 90%;
+  max-width: 500px; 
+  height: 48px;     
+  
+  
   padding: 0 25px;
-  font-size: 16px;  /* Prevents iOS auto-zoom on focus */
+  font-size: 16px;  
   color: #4a5568;
   background-color: transparent;
   border: 2px solid #5d6778;
-  border-radius: 24px; /* Pill shape */
+  border-radius: 24px; 
   outline: none;
   
-  /* Animation Timing */
+  
   transition: all 0.3s ease-in-out;
 }
 
-/* Hover & Animation effects */
+
 .search-input:hover {
   border-color: #3b424e;
   background-color: rgba(0, 0, 0, 0.02);
@@ -35,10 +35,10 @@
 .search-input:focus {
   border-color: #2d3748;
   box-shadow: 0 0 10px rgba(93, 103, 120, 0.2);
-  transform: scale(1.02); /* Slight "pop" animation on focus */
+  transform: scale(1.02); 
 }
 
-/* Placeholder styling */
+
 .search-input::placeholder {
   color: #5d6778;
   opacity: 0.8;

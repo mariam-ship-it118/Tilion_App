@@ -1,10 +1,10 @@
-/* Importing Poppins as requested */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 :root {
   --bubblegum-blue: #3b5998;
   --starlight-yellow: #fff200;
-  --cloud-white: #FFFCDD; /* Matches your image background */
+  --cloud-white: #FFFCDD; 
 }
 
 body {
@@ -13,7 +13,7 @@ body {
   background-color: var(--cloud-white);
 }
 
-/* SEO Component: Hidden but readable by crawlers */
+
 .pixel-privacy-label {
   position: absolute;
   width: 1px;
@@ -25,7 +25,7 @@ body {
   border: 0;
 }
 
-/* Base Mobile Layout */
+
 .kredit-top-bar {
   padding: 15px 20px;
   background: var(--cloud-white);
@@ -39,7 +39,7 @@ body {
   height: 80px;
 }
 
-/* Logo specific styling */
+
 .orbit-central-hub {
   display: flex;
   flex-direction: column;
@@ -75,7 +75,7 @@ body {
   margin-top: 4px;
 }
 
-/* Action Button */
+
 .echo-alert-zone {
   position: absolute;
   right: 0;
@@ -99,7 +99,7 @@ body {
   rotate: 15deg;
 }
 
-/* Tablet Overrides */
+
 @media (min-width: 768px) {
   .glitter-container {
     height: 100px;
@@ -116,13 +116,13 @@ body {
   }
 }
 
-/* Animations */
+
 @keyframes pulse-glow {
   0%, 100% { transform: scale(1); opacity: 1; }
   50% { transform: scale(1.15); opacity: 0.8; }
 }
 
-/* Hiding for large screens/Desktop to stay "Mobile First" */
+
 @media (min-width: 1025px) {
   .kredit-top-bar {
     display: none;

@@ -7,7 +7,7 @@ import TextMessages from '../../Components/TextMessages';
 import ChatBar from '../../Components/ChatBar';
 const Chat = () => {
    
-  const { userId } = useParams(); // This gets "ahmed-1" from the URL
+  const { userId } = useParams(); 
     return ( <>
     
     <TopChat/>

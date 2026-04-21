@@ -26,7 +26,7 @@ const CraftGuide = () => {
   return (
     <div className="guide-wrapper">
       <div className="guide-container">
-        {/* Header Section */}
+        {}
         <section className="guide-section">
           <h2 className="section-title">Tool and materials</h2>
           <ul className="materials-list">
@@ -39,7 +39,7 @@ const CraftGuide = () => {
           </ul>
         </section>
 
-        {/* Paper Sizes Section */}
+        {}
         <section className="guide-section">
           <h2 className="section-title">Paper Sizes</h2>
           <ul className="sizes-list">
@@ -49,7 +49,7 @@ const CraftGuide = () => {
           </ul>
         </section>
 
-        {/* Steps Section */}
+        {}
         <section className="guide-section">
           <h2 className="section-title">Steps</h2>
           

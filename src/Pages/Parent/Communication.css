@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg-color: #FFFCDD;
+  --text-primary: #1a1a2e;
+  --text-handle: #4a5a8a;
+  --text-time: #56a8f5;
+  --icon-grey: #4b5563;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-color);
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-primary);
+}
+
+.vibe-wrapper {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.vibe-scroll-area {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.6s ease-out;
+}
+
+.vibe-fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.vibe-post-block {
+  padding: 20px 16px;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.vibe-post-layout {
+  display: flex;
+  gap: 12px;
+}
+
+.vibe-pfp-space {
+  flex-shrink: 0;
+}
+
+.vibe-pfp-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #d1d5db;
+  object-fit: cover;
+}
+
+.vibe-post-main {
+  flex: 1;
+}
+
+.vibe-user-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 6px;
+}
+
+.vibe-name-stack {
+  display: flex;
+  flex-direction: column;
+}
+
+.vibe-display-name {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+.vibe-handle {
+  font-size: 13px;
+  color: var(--text-handle);
+  font-weight: 500;
+}
+
+.vibe-timestamp {
+  color: var(--text-time);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.vibe-body-text {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 8px 0 16px 0;
+  color: #1f2937;
+  font-weight: 400;
+}
+
+.vibe-interaction-bar {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.vibe-action-icon {
+  width: 20px;
+  height: 20px;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.vibe-action-icon:hover {
+  transform: scale(1.1);
+}
+
+.vibe-more-icon {
+  width: 18px;
+  height: 18px;
+  margin-left: auto;
+  opacity: 0.7;
+}
+
+.vibe-seo-data {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+@media (min-width: 768px) {
+  .vibe-wrapper {
+    max-width: 550px;
+    padding: 30px 20px;
+  }
+}

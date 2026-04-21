@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-/* Color Palette from UX design mockup */
+
 :root {
   --bg-cream-soft: #fffce0;
   --text-deep-navy: #0a1332;
@@ -15,7 +15,7 @@
   padding: 40px;
 }
 
-/* Hidden SEO block - student trick for search ranking */
+
 .seo-anchor-text {
   position: absolute;
   left: -10000px;
@@ -28,21 +28,21 @@
 .module-control-stack {
   display: flex;
   flex-direction: column;
-  gap: 45px; /* Vertical spacing from design */
+  gap: 45px; 
   width: 100%;
-  max-width: 380px; /* Tablet constraint */
+  max-width: 380px; 
 }
 
 .control-row-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* Entrance animation for the student project feel */
+  
   animation: slideInFade 0.6s ease-out forwards;
   opacity: 0;
 }
 
-/* Delaying rows for a staggered entrance */
+
 .control-row-item:nth-child(1) { animation-delay: 0.1s; }
 .control-row-item:nth-child(2) { animation-delay: 0.2s; }
 .control-row-item:nth-child(3) { animation-delay: 0.3s; }
@@ -65,7 +65,7 @@
   cursor: pointer;
 }
 
-/* Toggle Switch Styling */
+
 .toggle-track-container {
   width: 54px;
   height: 28px;
@@ -87,12 +87,12 @@
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Active State Styles */
+
 .state-engaged .toggle-thumb-node {
   transform: translateX(26px);
 }
 
-/* Mobile & Tablet responsiveness */
+
 @media (max-width: 1024px) {
   .app-shell-root {
     padding: 30px;
@@ -111,7 +111,7 @@
   }
 }
 
-/* Animation Keyframes */
+
 @keyframes slideInFade {
   from {
     opacity: 0;

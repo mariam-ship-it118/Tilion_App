@@ -7,14 +7,14 @@ import { Link } from 'react-router-dom';
 const TopChat = () => {
   return (
     <nav className="chat-header">
-      {/* Back Button */}
+      {}
       <Link to="/chats">
       <button className="icon-btn back-btn" aria-label="Go back">
         <span className="chevron-left"></span>
       </button>
       </Link>
 <Link to="/childprofile">
-      {/* Profile Section (Single Button) */}
+      {}
       <button 
         className="profile-link-btn" 
         onClick={() => console.log("Navigate to Profile")}
@@ -31,7 +31,7 @@ const TopChat = () => {
       </button>
 
           </Link>
-      {/* Action Icons */}
+      {}
       <div className="actions">
           <Link to="/call">
         <button 

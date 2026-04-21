@@ -8,7 +8,7 @@ const HomeParent = () => {
     return ( <>
     <NavParent/>
     <div className="portal-surface-container">
-      {/* SEO optimized header for parent-facing tools */}
+      {}
       <header className="identity-header-stack">
         <div className="guardian-avatar-wrap">
           <img src={parentImg} alt="Profile" className="guardian-visual" />
@@ -20,7 +20,7 @@ const HomeParent = () => {
       </header>
 
       <main className="dashboard-content-flow">
-        {/* Main Screen Time Insight */}
+        {}
         <section className="insight-hero-banner">
           <div className="banner-top-row">
             <span className="report-chip-indicator">
@@ -40,7 +40,7 @@ const HomeParent = () => {
           </div>
         </section>
 
-        {/* Interaction Metrics */}
+        {}
         <section className="insight-dual-grid">
           <article className="insight-tile-card">
             <h3 className="tile-category-label">Most talked</h3>
@@ -52,7 +52,7 @@ const HomeParent = () => {
           </article>
         </section>
 
-        {/* Navigation Actions */}
+        {}
         <nav className="action-link-stack">
             <Link to="/parentcontrol">
           <button className="nav-action-row">Controls</button>

@@ -1,4 +1,4 @@
-/* EnergyPopup.css */
+
 
 .popup-overlay {
   position: fixed;
@@ -6,7 +6,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4); /* Dimmed background */
+  background-color: rgba(0, 0, 0, 0.4); 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,24 +17,24 @@
 .popup-container {
   position: relative;
   width: 100%;
-  max-width: 400px; /* Tablet sizing limit */
+  max-width: 400px; 
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .cat-illustration-container {
-  margin-bottom: -40px; /* Pulls the cat over the card */
+  margin-bottom: -40px; 
   z-index: 10;
 }
 
 .cat-character {
-  font-size: 80px; /* Placeholder for your cat asset */
+  font-size: 80px; 
   filter: drop-shadow(0px 4px 8px rgba(0,0,0,0.2));
 }
 
 .popup-card {
-  background-color: #0d1326; /* Dark navy from your image */
+  background-color: #0d1326; 
   border-radius: 40px;
   padding: 60px 30px 40px 30px;
   text-align: center;
@@ -43,7 +43,7 @@
 }
 
 .popup-title {
-  color: #f6e02d; /* Yellow text */
+  color: #f6e02d; 
   font-family: 'Comic Sans MS', 'Inter', sans-serif;
   font-size: 1.2rem;
   font-weight: 800;
@@ -61,7 +61,7 @@
 }
 
 .popup-button {
-  background-color: #e2e8ff; /* Soft lavender/white */
+  background-color: #e2e8ff; 
   color: #0d1326;
   border: none;
   border-radius: 25px;
@@ -76,7 +76,7 @@
   transform: scale(0.95);
 }
 
-/* Mobile adjustments */
+
 @media (max-width: 480px) {
   .popup-card {
     border-radius: 30px;

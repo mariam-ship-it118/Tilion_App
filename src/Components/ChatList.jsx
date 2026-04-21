@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link
+import { Link } from 'react-router-dom'; 
 import './ChatList.css';
 
 const ChatList = () => {
@@ -18,7 +18,7 @@ const ChatList = () => {
     <div className="app-container">
       <div className="message-page">
         {chatData.map((chat) => (
-          /* Use Link to navigate to the unique ID of the user */
+          
           <Link to={`/chat/${chat.id}`} key={chat.id} className="chat-link">
             <div className="chat-item">
               <div className="chat-avatar"></div>

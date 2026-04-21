@@ -1,4 +1,4 @@
-/* Styling for Mobile & Tablet only */
+
 .squad-discovery-root {
   font-family: 'Poppins', sans-serif;
   background-color: #fdfbf0;
@@ -8,7 +8,7 @@
 }
 
 .stealth-meta-data {
-  display: none; /* SEO indexing only */
+  display: none; 
 }
 
 .section-shout {
@@ -18,13 +18,13 @@
   margin-bottom: 20px;
 }
 
-/* Horizontal scrolling for friends - feels native on phones */
+
 .scroll-horizon {
   display: flex;
   gap: 20px;
   overflow-x: auto;
   padding-bottom: 15px;
-  scrollbar-width: none; /* Hide scrollbar for clean UX */
+  scrollbar-width: none; 
 }
 
 .avatar-capsule {
@@ -78,7 +78,7 @@
   transform: scale(0.9);
 }
 
-/* Quest Component */
+
 .daily-quest-card {
   margin-top: 30px;
   background: #ffffff;
@@ -106,14 +106,14 @@
   animation: fill-up 1.5s ease-in-out;
 }
 
-/* Tablet adjustments */
+
 @media (min-width: 768px) {
   .squad-discovery-root { padding: 40px; }
   .profile-halo { width: 90px; height: 90px; }
   .handle-text { font-size: 15px; }
 }
 
-/* Student-style simple animations */
+
 @keyframes slide-up-fade {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }

@@ -1,12 +1,12 @@
 .chat-viewport {
-  background-color: #384999; /* Deep indigo background */
+  background-color: #384999; 
   padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 12px;
   min-height: 100vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  max-width: 600px; /* Tablet standard width */
+  max-width: 600px; 
   margin: 0 auto;
 }
 body{
@@ -19,7 +19,7 @@ body{
   margin-bottom: 20px;
 }
 
-/* Message Row Layout */
+
 .message-row {
   display: flex;
   width: 100%;
@@ -29,7 +29,7 @@ body{
 .received { justify-content: flex-start; }
 .sent { justify-content: flex-end; }
 
-/* Bubble Logic */
+
 .bubble-wrapper {
   max-width: 75%;
   display: flex;
@@ -43,18 +43,18 @@ body{
 }
 
 .received .message-bubble {
-  background-color: #bfc9f2; /* Light blue/grey */
+  background-color: #bfc9f2; 
   color: #1a1a1a;
   border-radius: 20px 20px 20px 4px;
 }
 
 .sent .message-bubble {
-  background-color: #121931; /* Very dark navy */
+  background-color: #121931; 
   color: #ffffff;
   border-radius: 20px 20px 4px 20px;
 }
 
-/* Sticker Styling */
+
 .message-sticker {
   width: 150px;
   height: 150px;
@@ -63,7 +63,7 @@ body{
   margin-bottom: 4px;
 }
 
-/* Metadata (Time & Seen) */
+
 .message-info {
   display: flex;
   flex-direction: column;
@@ -79,7 +79,7 @@ body{
   margin-top: 2px;
 }
 
-/* Animations */
+
 @keyframes messageAppear {
   from {
     opacity: 0;
@@ -91,7 +91,7 @@ body{
   }
 }
 
-/* Tablet adjustments */
+
 @media (min-width: 768px) {
   .chat-viewport {
     padding: 40px;

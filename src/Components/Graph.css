@@ -9,7 +9,7 @@
   --text-sub: #3b4ba0;
 }
 
-/* Base styles for the student project */
+
 .zone-wrapper {
   font-family: 'Poppins', sans-serif;
   background-color: var(--bg-creme);
@@ -20,7 +20,7 @@
   min-height: 400px;
 }
 
-/* Hidden SEO block */
+
 .hidden-metadata {
   position: absolute;
   width: 1px;
@@ -51,7 +51,7 @@
   margin: 0 0 40px 0;
 }
 
-/* Grid Layout for bars */
+
 .visual-data-grid {
   display: flex;
   justify-content: space-between;
@@ -61,7 +61,7 @@
   position: relative;
 }
 
-/* Background guide lines */
+
 .visual-data-grid::before {
   content: '';
   position: absolute;
@@ -88,7 +88,7 @@
 .bar-fill {
   width: 100%;
   border-radius: 8px;
-  /* Slight growth animation for UX class */
+  
   animation: growUp 0.8s ease-out forwards;
   transform-origin: bottom;
 }
@@ -104,7 +104,7 @@
   font-weight: 400;
 }
 
-/* Tablet & Phone Specific viewports */
+
 @media (max-width: 1024px) {
   .main-board-container {
     max-width: 90%;
@@ -117,7 +117,7 @@
   .column-unit { width: 13%; }
 }
 
-/* Smooth entry animation */
+
 @keyframes growUp {
   from {
     transform: scaleY(0);

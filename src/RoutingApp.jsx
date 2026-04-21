@@ -20,6 +20,10 @@ import TilionWelcome from './Pages/Accounts';
 import HomeParent from './Pages/Parent/HomeParent';
 import ParentControl from './Pages/Parent/ParentControl';
 import DiscoveryZone from './Pages/Parent/ScreenTime';
+import Requests from './Pages/Parent/Requests';
+import ChatParent from './Pages/Parent/ChatParent';
+import ActivityDashboard from './Pages/Parent/ActivityDshboard';
+import KidsSocialFeed from './Pages/Parent/Community';
 
 
 
@@ -43,13 +47,18 @@ const RoutingApp = () => {
         <Route path="/call" element={<CallScreen/>} />
 
 
-{/* parent */}
+{}
 
 
 <Route path="/homeparent" element={<HomeParent/>} />
 <Route path="/parentcontrol" element={<ParentControl/>} />
 <Route path="/screentime" element={<DiscoveryZone/>} />
-
+<Route path="/requests" element={<Requests/>} />
+<Route path="/chatparent/:userId" element={<ChatParent />} />
+<Route path="/activityparent" element={<ActivityDashboard />} />
+<Route path="/community" element={<KidsSocialFeed />} />
+    
+    
       </Routes>
     </Router>
     

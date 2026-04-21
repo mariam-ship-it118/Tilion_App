@@ -1,6 +1,6 @@
-/* Container and Background */
+
 .app-container {
-  background-color: #FFFCDD; /* The light yellow tint from your image */
+  background-color: #FFFCDD; 
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -8,31 +8,31 @@
   font-family: 'Inter', sans-serif;
   font-family: poppins;
 }
-/* Remove default link styling */
+
 .chat-link {
   text-decoration: none;
   color: inherit;
-  display: block; /* Makes the whole row clickable */
+  display: block; 
 }
 
 .chat-item:active {
-  background-color: rgba(0, 0, 0, 0.05); /* Visual feedback when tapped on phone */
+  background-color: rgba(0, 0, 0, 0.05); 
 }
 .message-page {
   width: 100%;
-  max-width: 500px; /* Limits width on tablets for better UI */
+  max-width: 500px; 
   padding: 0 15px;
 }
 
-/* Individual Message Row */
+
 .chat-item {
   display: flex;
   align-items: center;
   padding: 12px 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05); /* Subtle separator */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05); 
 }
 
-/* Grey Avatar Circle */
+
 .chat-avatar {
   width: 65px;
   height: 65px;
@@ -41,7 +41,7 @@
   flex-shrink: 0;
 }
 
-/* Text Content Wrapper */
+
 .chat-info {
   flex-grow: 1;
   padding-left: 15px;
@@ -62,11 +62,11 @@
 
 .chat-status {
   font-size: 0.85rem;
-  color: #3f51b5; /* Blue "Active now" text */
+  color: #3f51b5; 
   font-weight: 500;
 }
 
-/* Right Side Blue Dot */
+
 .chat-indicator {
   padding-left: 10px;
 }
@@ -78,11 +78,11 @@
   border-radius: 50%;
 }
 
-/* Tablet Responsiveness */
+
 @media (min-width: 768px) {
   .message-page {
     max-width: 650px;
-    background: #ffffff; /* Optional: adds a card feel on larger screens */
+    background: #ffffff; 
     padding: 20px 30px;
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
