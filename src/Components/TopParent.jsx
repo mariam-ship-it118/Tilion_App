@@ -9,7 +9,7 @@ const TopParent = () => {
 
   return (
     <header className="kredit-top-bar">
-      {}
+      
       <h1 className="pixel-privacy-label">
         StarBound - The Safest Social Space for Creative Kids & Tweens
       </h1>
@@ -22,7 +22,7 @@ const TopParent = () => {
             display: 'flex', 
             justifyContent: 'center', 
             alignItems: 'center', 
-            background: '#EADB25', 
+           
             color: '#1A1F36', 
             fontWeight: '700',
             fontSize: '16px',
@@ -31,7 +31,7 @@ const TopParent = () => {
             width: '40px',
             height: '40px',
             cursor: 'pointer',
-            marginRight: '12px'
+            marginRight: '22px'
           }}
         >
           <img src={LangIcon} alt="Toggle Language" style={{ width: '24px', height: '24px' }} />

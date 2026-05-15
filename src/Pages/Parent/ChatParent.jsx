@@ -1,9 +1,11 @@
 import React from 'react';
 import './ParentChat.css';
+import { Link } from 'react-router-dom';
 import NavParent from '../../Components/NavParent';
 import Profile01 from '../../Assets/profile1.svg';
 import Profile02 from '../../Assets/profile.svg';
 import Ola from '../../Assets/friendparent.svg';
+
 const ChatParent = () => {
   return (
     <>
@@ -13,6 +15,14 @@ const ChatParent = () => {
         <header className="app-top-nav">
           <div className="nav-left-action">
             <span className="back-chevron"></span>
+<Link to="/requests">
+   <button className="back-btn" aria-label="Go back">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 18L9 12L15 6" stroke="#161A30" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+        </button>
+</Link>
+
           </div>
           <div className="user-identity-hub">
             <img src={Ola} alt="Profile" className="nav-avatar-img" />

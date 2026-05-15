@@ -20,11 +20,13 @@ const TilionWelcome = () => {
     <div className="view-viewport-root">
 
       <header className="app-navigation-container">
+        <Link to="/">
         <button className="nav-back-trigger" aria-label="Go back">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="yellow" strokeWidth="3">
             <path d="M15 18l-6-6 6-6" />
           </svg>
         </button>
+        </Link>
       </header>
 
       <main className="content-hub-main">
@@ -57,13 +59,14 @@ const TilionWelcome = () => {
             <p className="profile-label-text">Alaa Musa</p>
           </div>
 </Link>
-
+ <Link to="/login">
           <div className="user-entity-card action-trigger-node">
             <button className="creation-action-btn" aria-label="Add new profile">
               <span className="icon-plus-symbol">+</span>
             </button>
             <p className="profile-label-text">Add</p>
           </div>
+ </Link>
 
         </section>
       </main>

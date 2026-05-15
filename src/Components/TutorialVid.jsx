@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './TutorialVid.css';
 import CoverImg from "../Assets/coverimg.svg"; 
+import InstructionImg from "../Assets/instructionImg.svg";
+import VidTutorial from "../Assets/Video_tutorial_bookchain_for_kids_202605022303.mp4";
 
 const SocialFeedBundle = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -46,7 +48,7 @@ const SocialFeedBundle = () => {
             ) : (
               <iframe 
                 className="active-media-stream"
-                src="https://www.youtube.com/embed/your-video-id?autoplay=1" 
+                src={VidTutorial} 
                 title="Miniature Book Tutorial"
                 frameBorder="0" 
                 allow="autoplay; encrypted-media" 
@@ -60,7 +62,7 @@ const SocialFeedBundle = () => {
         <section className="step-gallery-grid" aria-label="Step by step instructions">
           <div className="grid-media-canvas">
             <img 
-              src="/path-to-instruction-grid.jpg" 
+              src={InstructionImg}
               alt="Detailed steps for making a secret keychain journal" 
               className="ui-rounded-img"
             />

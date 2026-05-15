@@ -4,12 +4,12 @@ const KidsStoryBar = () => {
   
   const stories = [
     { id: 1, name: 'Ahmed', img: 'https://placehold.co/100x100/png' },
-    { id: 2, name: 'Ahmed', img: 'https://placehold.co/100x100/png' },
-    { id: 3, name: 'Ahmed', img: 'https://placehold.co/100x100/png' },
-    { id: 4, name: 'Ahmed', img: 'https://placehold.co/100x100/png' },
-    { id: 5, name: 'Ahmed', img: 'https://placehold.co/100x100/png' },
-    { id: 6, name: 'Ahmed', img: 'https://placehold.co/100x100/png' },
-    { id: 7, name: 'Ahmed', img: 'https://placehold.co/100x100/png' },
+    { id: 2, name: 'Moustafa', img: 'https://placehold.co/100x100/png' },
+    { id: 3, name: 'Ali', img: 'https://placehold.co/100x100/png' },
+    { id: 4, name: 'Mohamed', img: 'https://placehold.co/100x100/png' },
+    { id: 5, name: 'Omar', img: 'https://placehold.co/100x100/png' },
+    { id: 6, name: 'Ziad', img: 'https://placehold.co/100x100/png' },
+    { id: 7, name: 'Hassan', img: 'https://placehold.co/100x100/png' },
   ];
 
   return (

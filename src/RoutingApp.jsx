@@ -52,8 +52,7 @@ const RoutingApp = () => {
         <Route path="/call" element={<CallScreen/>} />
 
 
-{}
-
+{/* parent account*/}
 
 <Route path="/homeparent" element={<HomeParent/>} />
 <Route path="/parentcontrol" element={<ParentControl/>} />
