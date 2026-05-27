@@ -16,6 +16,7 @@ import Activities from './Pages/Child/Activities';
 import CraftsActivity from './Pages/Child/CraftsActivity';
 import BookChainCrafting from './Pages/Child/BookChainCrafting';
 import UserProfileView from './Pages/Child/Profile';
+import FriendsPage from './Pages/Child/Friends';
 import CallScreen from './Pages/Child/CallScreen';
 import AccountScreen from './Pages/Accounts';
 import TilionWelcome from './Pages/Accounts';
@@ -49,6 +50,7 @@ const RoutingApp = () => {
         <Route path="/activity/crafting" element={<CraftsActivity />} />
 <Route path="/activity/crafting/bookchain" element={<BookChainCrafting />} />
         <Route path="/profile" element={<UserProfileView/>} />
+        <Route path="/friends" element={<FriendsPage />} />
         <Route path="/call" element={<CallScreen/>} />
 
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Profile.css';
 import Logo from "../../Assets/logo_2.svg";
 import Profile from "../../Assets/profile.svg";
@@ -41,11 +42,14 @@ const UserProfileView = () => {
 
         {}
         <section className="social-stats-row">
-          <article className="stat-bubble-item">
+          <Link
+            to="/friends"
+            className="stat-bubble-item stat-bubble-link stat-bubble-even"
+          >
             <h2 className="stat-label-blue">My Friends</h2>
             <p className="stat-number-val">20</p>
-          </article>
-          <article className="stat-bubble-item">
+          </Link>
+          <article className="stat-bubble-item stat-bubble-even">
             <h2 className="stat-label-blue">Parent approved</h2>
             <p className="stat-number-val">3</p>
           </article>
