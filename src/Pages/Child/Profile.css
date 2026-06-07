@@ -2,7 +2,7 @@
 
 
 .app-main-layout {
-  background-color: #fffdec; 
+  background-color: #FFFCDD; 
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -14,6 +14,8 @@
   width: 100%;
   max-width: 450px; 
   text-align: center;
+  padding-bottom: 130px;
+  box-sizing: border-box;
 }
 
 
@@ -160,7 +162,7 @@
 
 .badges-footer-section {
   text-align: left;
-  padding: 0 10px 40px;
+  padding: 0 10px;
 }
 
 .badge-flex-wrap {
@@ -184,6 +186,118 @@
   background-color: #f0f75b;
 }
 
+.profile-posts-section {
+  margin-top: 28px;
+  text-align: center;
+  animation: slideDown 0.5s ease-out;
+}
+
+.profile-posts-title {
+  margin: 0 0 16px;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #0d1b3e;
+}
+
+.profile-posts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.profile-post-item {
+  aspect-ratio: 1;
+  overflow: hidden;
+  animation: slideDown 0.45s ease-out both;
+}
+
+.profile-post-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.logout-section {
+  text-align: center;
+  margin-top: 32px;
+  padding-bottom: 8px;
+}
+
+.logout-btn {
+  display: inline-block;
+  margin: 0;
+  padding: 12px 24px;
+  background: none;
+  border: none;
+  color: #ff7f7f;
+  font-size: 1.15rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.logout-btn:hover {
+  opacity: 0.85;
+}
+
+.logout-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 1100;
+  backdrop-filter: blur(4px);
+}
+
+.logout-modal-content {
+  background: white;
+  padding: 24px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 320px;
+  text-align: center;
+  animation: modalPop 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.logout-modal-content h3 {
+  margin: 0;
+  color: #1a202c;
+  font-size: 1.2rem;
+}
+
+.logout-modal-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.logout-modal-btn {
+  flex: 1;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.logout-modal-btn.cancel {
+  background: #edf2f7;
+  color: #4a5568;
+}
+
+.logout-modal-btn.confirm {
+  background: #ff7e7e;
+  color: white;
+}
+
+@keyframes modalPop {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
 
 @keyframes slideDown {
   from { opacity: 0; transform: translateY(-20px); }

@@ -2,17 +2,11 @@ import React, { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Friends.css';
 import NavBar from '../../Components/NavBar';
-
-const buildMockFriends = () =>
-  Array.from({ length: 10 }, (_, i) => ({
-    id: String(i + 1),
-    displayName: 'The gang',
-    handle: '@chooky002',
-  }));
+import { mockFriends } from './friendsData';
 
 const FriendsPage = () => {
   const [query, setQuery] = useState('');
-  const [friends, setFriends] = useState(buildMockFriends);
+  const [friends, setFriends] = useState(mockFriends);
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -64,7 +58,9 @@ const FriendsPage = () => {
           <ul className="friends-list">
             {filtered.map((friend) => (
               <li key={friend.id} className="friends-row">
-                <span className="friends-avatar-placeholder" aria-hidden />
+                <div className="friends-avatar">
+                  <img src={friend.avatar} alt={friend.displayName} />
+                </div>
                 <div className="friends-row-text">
                   <span className="friends-display-name">
                     {friend.displayName}

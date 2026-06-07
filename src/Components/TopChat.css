@@ -1,16 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 .chat-header {
   display: flex;
   align-items: center;
-  background-color: #0a0e27; 
-  padding: 10px 16px;
-  height: 70px;
-  gap: 12px;
-  animation: slideDown 0.4s ease-out;
+  background-color: #0f172a;
+  padding: 12px 14px;
+  min-height: 70px;
+  gap: 10px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
+.chat-header a {
+  text-decoration: none;
+  color: inherit;
+}
 
-button {
+.chat-header button {
   background: none;
   border: none;
   cursor: pointer;
@@ -20,92 +27,98 @@ button {
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-button:active {
+.chat-header button:active {
   transform: scale(0.95);
 }
 
-
 .profile-link-btn {
-  flex: 1; 
+  flex: 1;
+  display: flex;
+  align-items: center;
   text-align: left;
   gap: 12px;
+  text-decoration: none;
+  color: inherit;
+  min-width: 0;
 }
 
 .avatar {
-  width: 45px;
-  height: 45px;
+  width: 46px;
+  height: 46px;
   border-radius: 50%;
-  border: 2px solid #2d3748;
+  object-fit: cover;
+  flex-shrink: 0;
 }
 
 .user-info {
   display: flex;
   flex-direction: column;
+  min-width: 0;
 }
 
 .user-name {
   color: #ffffff;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-weight: 700;
   margin: 0;
+  line-height: 1.2;
 }
 
 .active-status {
-  color: #c4d600; 
-  font-size: 0.85rem;
+  color: #c4d600;
+  font-size: 0.8rem;
   font-weight: 500;
+  margin-top: 2px;
 }
-
 
 .actions {
   display: flex;
-  gap: 20px;
-  padding-left: 10px;
+  gap: 16px;
+  align-items: center;
+  flex-shrink: 0;
 }
 
 .icon-btn {
-  font-size: 24px;
-  color: #ffffff;
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
 .icon-btn:hover {
   opacity: 1;
-  transform: translateY(-2px);
 }
 
+.phone-icon img,
+.video-icon img {
+  width: 22px;
+  height: 22px;
+  display: block;
+}
 
 .chevron-left {
   border: solid white;
-  border-width: 0 3px 3px 0;
+  border-width: 0 2.5px 2.5px 0;
   display: inline-block;
   padding: 5px;
   transform: rotate(135deg);
+  margin-left: 4px;
 }
 
-
-@keyframes slideDown {
-  from {
-    transform: translateY(-20px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
+.back-btn {
+  padding: 6px;
+  flex-shrink: 0;
 }
-
 
 @media (min-width: 768px) {
   .chat-header {
-    height: 85px;
-    padding: 10px 30px;
+    min-height: 80px;
+    padding: 14px 24px;
   }
+
   .avatar {
-    width: 55px;
-    height: 55px;
+    width: 52px;
+    height: 52px;
   }
+
   .user-name {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }

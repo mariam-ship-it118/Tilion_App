@@ -33,7 +33,7 @@ const NavParent = () => {
           <span className="label-text">Home</span>
         </div>
 </Link>
-<Link to="/chatparent/:userId">
+<Link to="/messagesparent">
         <div className="portal-link">
           <img src={Chat} alt="Secure Chats" className="glyph-asset" />
           <span className="label-text">Chats</span>

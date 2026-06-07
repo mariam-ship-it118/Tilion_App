@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './ActivityDashboard.css';
 import NavParent from '../../Components/NavParent';
 import TopParent from '../../Components/TopParent';
@@ -26,6 +27,7 @@ const KidsActivityModule = () => {
       </header>
 
       <section className="portal-content-feed">
+        <Link to="/craftingdetails" className="portal-task-link">
         <div className="portal-task-tile">
           <div className="portal-tile-inner">
             <div className="portal-avatar-ring ring-blue">
@@ -37,13 +39,14 @@ const KidsActivityModule = () => {
             </div>
             <div className="portal-action-group">
               <span className="portal-data-percent">28%</span>
-              <button className="portal-trash-hitbox" />
+              <button className="portal-trash-hitbox" onClick={(e) => e.preventDefault()} />
             </div>
           </div>
           <div className="portal-meter-bg">
             <div className="portal-meter-fill" style={{ width: isReady ? '28%' : '0%' }} />
           </div>
         </div>
+        </Link>
 
         <div className="portal-task-tile">
           <div className="portal-tile-inner">

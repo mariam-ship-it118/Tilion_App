@@ -1,142 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-
-:root {
-  --bg-canvas: #fffde7;
-  --card-primary: #fff9c4;
-  --card-secondary: #c5cae9;
-  --text-main: #1a1a1a;
-  --tag-bg: #f5f5f5;
-  --action-dark: #0d1117;
-}
-
-
-.discovery-hub-wrap {
-  max-width: 450px;
+.requests-page {
+  max-width: 480px;
   margin: 0 auto;
+  padding: 8px 20px 120px;
+  background: #fffCDD;
+  min-height: 100vh;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-.hub-section-title {
-  font-size: 1.4rem;
+.requests-back {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 8px;
+  color: #0d1127;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.requests-back:active {
+  transform: scale(0.94);
+  background: rgba(13, 17, 39, 0.06);
+}
+
+.requests-section {
+  margin-bottom: 24px;
+}
+
+.requests-title {
+  font-size: 1.35rem;
   font-weight: 700;
-  margin-bottom: 15px;
-  padding-left: 10px;
+  color: #1a1a1a;
+  margin: 0 0 14px 4px;
 }
 
-
-.buddy-invite-card {
-  background-color: var(--card-primary);
+.req-card {
   border-radius: 28px;
-  padding: 20px;
-  margin-bottom: 25px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  animation: slideInFade 0.6s ease-out;
+  padding: 18px;
+  margin-bottom: 14px;
+  animation: reqFadeUp 0.5s ease-out both;
 }
 
-.suggest-profile-box {
-  background-color: var(--card-secondary);
-  border-radius: 28px;
-  padding: 20px;
-  margin-bottom: 15px;
-  animation: slideInFade 0.8s ease-out;
+.req-card.request {
+  background: #fffdf0;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
 }
 
+.req-card.suggestion {
+  background: #c2cfff;
+}
 
-.user-identity-flex {
+.req-user {
   display: flex;
   align-items: center;
   gap: 12px;
   margin-bottom: 12px;
 }
 
-.avatar-circle-frame {
+.req-avatar {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: #eee;
   overflow: hidden;
+  flex-shrink: 0;
+  background: #eee;
 }
 
-.avatar-circle-frame img {
+.req-avatar img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.name-stack {
+.req-names {
   display: flex;
   flex-direction: column;
+  gap: 2px;
 }
 
-.primary-alias {
-  font-weight: 700;
+.req-name {
   font-size: 0.95rem;
+  font-weight: 700;
+  color: #1a1a1a;
 }
 
-.secondary-alias {
-  font-size: 0.8rem;
-  opacity: 0.8;
+.req-child {
+  font-size: 0.82rem;
+  color: #333;
+  opacity: 0.85;
 }
 
-
-.interest-pill-row {
+.req-tags {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
-.hobby-pill {
-  background: rgba(255, 255, 255, 0.7);
-  padding: 4px 14px;
-  border-radius: 20px;
+.req-tag {
+  padding: 5px 14px;
+  border-radius: 999px;
   font-size: 0.75rem;
-  color: #3f51b5;
   font-weight: 500;
+  color: #3f51b5;
 }
 
+.req-card.request .req-tag {
+  background: #e0e7ff;
+}
 
-.control-btn-group {
+.req-card.suggestion .req-tag {
+  background: #ffffff;
+}
+
+.req-actions {
   display: flex;
   gap: 12px;
 }
 
-.action-trigger-solid {
+.req-btn {
   flex: 1;
-  background: var(--action-dark);
-  color: white;
+  padding: 10px 12px;
+  border-radius: 999px;
+  font-family: inherit;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.req-btn:active {
+  transform: scale(0.97);
+}
+
+.req-btn.solid {
+  background: #0d1321;
+  color: #fff;
   border: none;
-  padding: 10px;
-  border-radius: 25px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  cursor: pointer;
 }
 
-.action-trigger-outline {
-  flex: 1;
+.req-btn.outline {
   background: transparent;
-  border: 1.5px solid var(--action-dark);
-  padding: 10px;
-  border-radius: 25px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  cursor: pointer;
+  color: #0d1321;
+  border: 1.5px solid #0d1321;
 }
 
-
-@keyframes slideInFade {
+@keyframes reqFadeUp {
   from {
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(12px);
   }
   to {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-
-@media (max-width: 768px) {
-  .discovery-hub-wrap {
-    width: 90%;
   }
 }

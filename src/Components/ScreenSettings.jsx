@@ -27,23 +27,28 @@ const KidSafetyDashboard = () => {
         {}
         <div className="control-row-item">
           <span className="label-descriptor">Break every</span>
-          <div 
-            className={`toggle-track-container ${isBreakActive ? 'state-engaged' : ''}`}
+          <button
+            type="button"
+            className={`toggle-track-container${isBreakActive ? ' state-engaged' : ''}`}
             onClick={() => setIsBreakActive(!isBreakActive)}
+            aria-pressed={isBreakActive}
+            aria-label="Break every"
           >
-            <div className="toggle-thumb-node"></div>
-          </div>
+            <span className="toggle-thumb-node" />
+          </button>
         </div>
 
-        {}
         <div className="control-row-item">
           <span className="label-descriptor">Bed time set</span>
-          <div 
-            className={`toggle-track-container ${isBedtimeActive ? 'state-engaged' : ''}`}
+          <button
+            type="button"
+            className={`toggle-track-container${isBedtimeActive ? ' state-engaged' : ''}`}
             onClick={() => setIsBedtimeActive(!isBedtimeActive)}
+            aria-pressed={isBedtimeActive}
+            aria-label="Bed time set"
           >
-            <div className="toggle-thumb-node"></div>
-          </div>
+            <span className="toggle-thumb-node" />
+          </button>
         </div>
       </div>
     </div>

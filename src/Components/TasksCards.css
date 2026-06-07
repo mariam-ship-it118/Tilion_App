@@ -1,6 +1,6 @@
 
 .app-container {
-  background-color: #FFFDE4; 
+  background-color: #FFFCDD; 
   min-height: 100vh;
   padding: 24px 20px;
   font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
@@ -15,7 +15,8 @@
   gap: 28px; 
   width: 100%;
   max-width: 500px; 
-}
+} 
+  
 
 
 .task-card {

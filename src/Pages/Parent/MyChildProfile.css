@@ -1,0 +1,157 @@
+.child-profile-wrap {
+  background: #FFFCDD;
+  padding-bottom: 110px;
+}
+
+.child-profile-back {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin: 8px 0 0 16px;
+  color: #2d3e8b;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.child-profile-back:active {
+  transform: scale(0.94);
+  background: rgba(45, 62, 139, 0.08);
+}
+
+.child-profile-page {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 8px 20px 24px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.child-profile-header {
+  animation: childFadeIn 0.5s ease-out;
+}
+
+.child-profile-avatar {
+  width: 130px;
+  height: 130px;
+  margin: 0 auto 14px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 14px rgba(45, 62, 139, 0.12);
+}
+
+.child-profile-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.child-profile-header h1 {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #0d1b3e;
+}
+
+.child-profile-handle {
+  margin: 6px 0 0;
+  font-size: 1.05rem;
+  color: #5c7fb8;
+}
+
+.child-profile-bio {
+  margin: 6px 0 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.child-profile-curve {
+  height: 36px;
+  border-bottom: 2px solid #5c7fb8;
+  border-radius: 0 0 50% 50%;
+  margin: 16px 12% 0;
+  opacity: 0.45;
+}
+
+.child-profile-stats {
+  display: flex;
+  gap: 14px;
+  margin: 28px 0;
+  animation: childFadeUp 0.55s ease-out 0.1s both;
+}
+
+.child-stat-card {
+  flex: 1;
+  background: #e8edff;
+  border-radius: 24px;
+  padding: 18px 12px;
+  box-shadow: 0 4px 12px rgba(45, 62, 139, 0.06);
+}
+
+.child-stat-card h2 {
+  margin: 0 0 10px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #3e54ac;
+}
+
+.child-stat-card p {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.child-profile-posts {
+  animation: childFadeUp 0.55s ease-out 0.18s both;
+}
+
+.child-profile-posts h3 {
+  margin: 0 0 16px;
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #3e54ac;
+}
+
+.child-posts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.child-post-item {
+  aspect-ratio: 1;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #e8edff;
+  animation: childFadeUp 0.45s ease-out both;
+}
+
+.child-post-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@keyframes childFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes childFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

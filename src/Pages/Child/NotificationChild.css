@@ -1,0 +1,156 @@
+.child-notify-page {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 16px 20px 120px;
+  background: #FFFCDD;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+.child-notify-header {
+  margin-bottom: 20px;
+  animation: childNotifyIn 0.45s ease-out;
+}
+
+.child-notify-header h1 {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #2d3663;
+}
+
+.child-notify-header p {
+  margin: 6px 0 0;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.child-notify-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.child-notify-card {
+  position: relative;
+  background: #fff;
+  border-radius: 20px;
+  padding: 16px;
+  box-shadow: 0 4px 14px rgba(45, 54, 99, 0.08);
+  animation: childNotifyUp 0.45s ease-out both;
+}
+
+.child-notify-card.unread {
+  background: #b8c1fb;
+}
+
+.child-notify-dot {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #2d3e8b;
+}
+
+.child-notify-row {
+  display: flex;
+  gap: 12px;
+}
+
+.child-notify-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #2d3e8b;
+}
+
+.child-notify-icon.blue {
+  background: #d8e4ff;
+}
+
+.child-notify-icon.yellow {
+  background: #e6e600;
+}
+
+.child-notify-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.child-notify-body {
+  flex: 1;
+  min-width: 0;
+  padding-right: 14px;
+}
+
+.child-notify-body h2 {
+  margin: 0 0 6px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #2d3663;
+}
+
+.child-notify-body p {
+  margin: 0 0 8px;
+  font-size: 0.88rem;
+  color: #2d3663;
+  line-height: 1.4;
+}
+
+.child-notify-time {
+  font-size: 0.78rem;
+  color: #6b7280;
+}
+
+.child-notify-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(45, 54, 99, 0.12);
+}
+
+.child-notify-actions button {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 12px;
+  font-family: inherit;
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+  border: 2px solid #2d3e8b;
+  background: #2d3e8b;
+  color: #fff;
+}
+
+.child-notify-actions button.ignore {
+  background: #fff;
+  color: #2d3e8b;
+}
+
+@keyframes childNotifyIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes childNotifyUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

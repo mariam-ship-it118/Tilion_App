@@ -28,6 +28,13 @@ import ChatParent from './Pages/Parent/ChatParent';
 import ActivityDashboard from './Pages/Parent/ActivityDshboard';
 import KidsSocialFeed from './Pages/Parent/Community';
 import ProfileParent from './Pages/Parent/ProfileParent';
+import CyberBullyingPage from './Pages/Parent/CyberBullyingPage';
+import MyChildProfile from './Pages/Parent/MyChildProfile';
+import NotificationPage from './Pages/Parent/NotificationPage';
+import FriendPage from './Pages/Child/FriendPage';
+import MessagesParent from './Pages/Parent/MessagesParent';
+import CraftingDetails from './Pages/Parent/CraftingDetails';
+import NotificationChild from './Pages/Child/NotificationChild';
 
 
 
@@ -52,18 +59,25 @@ const RoutingApp = () => {
         <Route path="/profile" element={<UserProfileView/>} />
         <Route path="/friends" element={<FriendsPage />} />
         <Route path="/call" element={<CallScreen/>} />
+        <Route path="/childnotifications" element={<NotificationChild />} />
 
 
 {/* parent account*/}
 
 <Route path="/homeparent" element={<HomeParent/>} />
 <Route path="/parentcontrol" element={<ParentControl/>} />
+<Route path="/bullying" element={<CyberBullyingPage />} />
+<Route path="/mychildprofile" element={<MyChildProfile />} />
 <Route path="/screentime" element={<DiscoveryZone/>} />
 <Route path="/requests" element={<Requests/>} />
 <Route path="/chatparent/:userId" element={<ChatParent />} />
 <Route path="/activityparent" element={<ActivityDashboard />} />
+<Route path="/craftingdetails" element={<CraftingDetails />} />
 <Route path="/community" element={<KidsSocialFeed />} />
 <Route path="/profileparent" element={<ProfileParent />} />
+<Route path="/notifications" element={<NotificationPage />} />
+<Route path="/parentfriends" element={<FriendPage />} />
+<Route path="/messagesparent" element={<MessagesParent />} />
     
     
       </Routes>

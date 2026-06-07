@@ -1,11 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import NavParent from '../../Components/NavParent';
 import './ProfileParent.css';
 import parentImg from '../../Assets/parentprofile.svg';
+import TopParent from '../../Components/TopParent';
 
 const ProfileParent = () => {
+    const navigate = useNavigate();
+    const [showLogoutConfirm, setShowLogoutConfirm] = useState(false);
+
+    const handleLogout = () => {
+        setShowLogoutConfirm(false);
+        navigate('/accounts');
+    };
+
     return (
         <>
+        <TopParent/>
             <NavParent />
             <div className="portal-surface-container">
                 <header className="identity-header-stack">
@@ -37,10 +48,40 @@ const ProfileParent = () => {
                     <nav className="action-link-stack" style={{ marginTop: '32px' }}>
                         <button className="nav-action-row">Edit Profile</button>
                         <button className="nav-action-row">Notification Settings</button>
-                        <button className="nav-action-row">Log Out</button>
+                        <button
+                            type="button"
+                            className="nav-action-row logout-link"
+                            onClick={() => setShowLogoutConfirm(true)}
+                        >
+                            Log Out
+                        </button>
                     </nav>
                 </main>
             </div>
+
+            {showLogoutConfirm && (
+                <div className="logout-modal-overlay" onClick={() => setShowLogoutConfirm(false)}>
+                    <div className="logout-modal-content" onClick={(e) => e.stopPropagation()}>
+                        <h3>Are you sure?</h3>
+                        <div className="logout-modal-actions">
+                            <button
+                                type="button"
+                                className="logout-modal-btn cancel"
+                                onClick={() => setShowLogoutConfirm(false)}
+                            >
+                                Cancel
+                            </button>
+                            <button
+                                type="button"
+                                className="logout-modal-btn confirm"
+                                onClick={handleLogout}
+                            >
+                                Log Out
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            )}
         </>
     );
 };

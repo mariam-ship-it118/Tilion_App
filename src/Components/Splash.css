@@ -1,199 +1,288 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
 
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  -webkit-tap-highlight-color: transparent;
-}
-
-
-.app-container {
+.splash-screen {
   position: relative;
   width: 100%;
   min-height: 100vh;
   min-height: 100dvh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   overflow: hidden;
+  background-color: #0c1331;
+  background-image: url('../Assets/bg_splash.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   font-family: 'Poppins', sans-serif;
+  animation: splashScreenIn 0.8s ease-out;
 }
 
-.content-wrapper {
-  position: relative;
-  z-index: 10;
-  width: 100%;
-  max-width: 500px; 
-  height: 100vh;
-  height: 100dvh;
-  display: flex;
-    background-image: url(../Assets/bg_splash.svg);
+.splash-screen--exit {
+  animation: splashScreenOut 0.7s ease-in forwards;
+}
 
+.splash-screen--exit .splash-logo {
+  animation: splashLogoExit 0.7s ease-in forwards;
+}
+
+.splash-bg-layer {
+  position: absolute;
+  inset: -20%;
+  background-image: url('../Assets/bg_splash.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+
+.splash-bg-layer--one {
+  opacity: 0.85;
+  animation: splashWaveDrift 18s ease-in-out infinite alternate;
+}
+
+.splash-bg-layer--two {
+  opacity: 0.45;
+  transform: scale(1.08);
+  animation: splashWaveDriftReverse 24s ease-in-out infinite alternate;
+}
+
+.splash-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 520px;
+  min-height: 100vh;
+  min-height: 100dvh;
+  margin: 0 auto;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 12vh 24px 8vh 24px;
+  align-items: center;
+  padding: 14vh 28px 10vh;
+  box-sizing: border-box;
 }
 
-
-.wavy-background {
-  position: absolute;
-  top: -20%;
-  left: -20%;
-  width: 140%;
-  height: 140%;
-  background: 
-    radial-gradient(ellipse at 30% 40%, #262b4f 0%, transparent 40%),
-    radial-gradient(ellipse at 70% 70%, #1e2240 0%, transparent 50%),
-    radial-gradient(ellipse at 80% 20%, #1a1e3b 0%, transparent 40%);
-  background-color: #171932;
-  animation: slowPan 25s infinite alternate ease-in-out;
-  z-index: 1;
-  
-  filter: blur(20px); 
-}
-
-
-.logo-section {
+.splash-hero {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.logo-graphic {
-  width: 190px;
-  height: 190px;
-  margin-bottom: 8px;
-  display: flex;
-  justify-content: center;
-}
-
-.animated-logo {
-  width: 100%;
-  height: 100%;
-  animation: float 5s ease-in-out infinite;
-  filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.3));
-}
-
-.animated-star {
-  transform-origin: 40px 65px;
-  animation: pulseStar 2.5s infinite alternate ease-in-out;
-}
-
-.brand-title {
-  font-family: 'Cinzel', serif;
-  font-size: 3.5rem;
-  font-weight: 500;
-  color: #ece928;
-  letter-spacing: 1.5px;
-  animation: fadeUp 0.8s ease-out forwards;
-}
-
-
-.bottom-section {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2.5rem;
-}
-
-.subtitle-group {
   text-align: center;
-  color: #b9c6e8;
-  font-size: 1rem;
-  line-height: 1.6;
-  font-weight: 400;
-  opacity: 0;
-  animation: fadeUp 0.8s ease-out 0.2s forwards;
-}
-
-.action-buttons {
-  width: 100%;
-  display: flex;
-  margin-left: 55%;
-  flex-direction: column;
-  gap: 18px;
-  opacity: 0;
-  animation: fadeUp 0.8s ease-out 0.4s forwards;
-}
-
-.auth-btn {
-  width: 40%;
-  padding: 18px;
-  border-radius: 35px;
-  border: none;
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.05rem;
-  font-weight: 600;
-  color: #ece928;
-  display: flex;
+  flex: 1;
   justify-content: center;
-  background-color: #0f1225;
-  cursor: pointer;
-  transition: all 0.25s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-  user-select: none;
 }
 
-.auth-btn:hover {
-  background-color: #161a33;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+.splash-logo-orbit {
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(87, 167, 220, 0.18) 0%, rgba(12, 19, 49, 0) 70%);
+  animation: splashOrbitPulse 4s ease-in-out infinite;
 }
 
-.auth-btn:active {
-  transform: translateY(1px);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+.splash-logo-wrap {
+  position: relative;
+  width: min(72vw, 260px);
+  animation: splashLogoReveal 1.1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
-
-@keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0px); }
+.splash-logo {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 14px 28px rgba(0, 0, 0, 0.35));
+  animation: splashLogoFloat 5.5s ease-in-out 1.1s infinite;
 }
 
-@keyframes pulseStar {
-  0% { transform: scale(0.9); filter: drop-shadow(0 0 4px rgba(236, 233, 40, 0.3)); }
-  100% { transform: scale(1.1); filter: drop-shadow(0 0 12px rgba(236, 233, 40, 0.7)); }
+.splash-star-glow {
+  position: absolute;
+  left: 8%;
+  top: 52%;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(228, 228, 36, 0.55) 0%, rgba(228, 228, 36, 0) 72%);
+  animation: splashStarTwinkle 2.2s ease-in-out infinite alternate;
+  pointer-events: none;
 }
 
-@keyframes slowPan {
-  0% { transform: translate(0, 0) scale(1); }
-  100% { transform: translate(-5%, 5%) scale(1.05); }
+.splash-taglines {
+  margin-top: 10px;
+  color: #ffffff;
 }
 
-@keyframes fadeUp {
+.splash-tagline {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 300;
+  line-height: 1.65;
+  letter-spacing: 0.02em;
+  opacity: 0;
+  transform: translateY(18px);
+  animation: splashTaglineIn 0.9s ease-out forwards;
+}
+
+.splash-tagline--one {
+  animation-delay: 0.45s;
+}
+
+.splash-tagline--two {
+  animation-delay: 0.7s;
+}
+
+.splash-loader-wrap {
+  width: 100%;
+  padding: 0 8px;
+  opacity: 0;
+  animation: splashLoaderWrapIn 0.8s ease-out 0.9s forwards;
+}
+
+.splash-loader-track {
+  width: 100%;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.22);
+  border-radius: 999px;
+  overflow: hidden;
+  position: relative;
+}
+
+.splash-loader-fill {
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #ffffff 0%, #d8e4ff 100%);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.45);
+  transition: width 0.08s linear;
+  position: relative;
+}
+
+.splash-loader-fill::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.85) 50%,
+    transparent 100%
+  );
+  animation: splashLoaderShimmer 1.4s ease-in-out infinite;
+}
+
+@keyframes splashScreenIn {
   from {
     opacity: 0;
-    transform: translateY(20px);
   }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes splashScreenOut {
+  to {
+    opacity: 0;
+    transform: scale(1.04);
+  }
+}
+
+@keyframes splashLogoExit {
+  to {
+    opacity: 0;
+    transform: translateY(-24px) scale(0.94);
+  }
+}
+
+@keyframes splashWaveDrift {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  100% {
+    transform: translate(-4%, 3%) scale(1.05);
+  }
+}
+
+@keyframes splashWaveDriftReverse {
+  0% {
+    transform: scale(1.08) rotate(0deg);
+  }
+  100% {
+    transform: scale(1.12) rotate(2deg) translate(3%, -2%);
+  }
+}
+
+@keyframes splashOrbitPulse {
+  0%,
+  100% {
+    transform: scale(0.92);
+    opacity: 0.55;
+  }
+  50% {
+    transform: scale(1.06);
+    opacity: 0.85;
+  }
+}
+
+@keyframes splashLogoReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(36px) scale(0.82);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes splashLogoFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes splashStarTwinkle {
+  0% {
+    transform: scale(0.85);
+    opacity: 0.45;
+  }
+  100% {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+}
+
+@keyframes splashTaglineIn {
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
+@keyframes splashLoaderWrapIn {
+  to {
+    opacity: 1;
+  }
+}
 
-@media screen and (min-width: 600px) {
-  .logo-graphic {
-    width: 240px;
-    height: 240px;
+@keyframes splashLoaderShimmer {
+  0% {
+    transform: translateX(-120%);
   }
-  
-  .brand-title {
-    font-size: 4.5rem;
+  100% {
+    transform: translateX(120%);
   }
-  
-  .subtitle-group {
-    font-size: 1.15rem;
+}
+
+@media (min-width: 768px) {
+  .splash-content {
+    padding: 12vh 40px 8vh;
   }
-  
-  .auth-btn {
-    font-size: 1.15rem;
-    padding: 20px;
-    width: 2%;
+
+  .splash-tagline {
+    font-size: 1.05rem;
+  }
+
+  .splash-logo-wrap {
+    width: 280px;
   }
 }

@@ -25,10 +25,12 @@ const TextMessages = () => {
             {msg.type === 'sticker' ? (
               <img src={msg.image} alt="sticker" className="message-sticker" />
             ) : (
-              <div className="message-bubble">{msg.text}</div>
+              <div className={`message-bubble${msg.type === 'emoji' ? ' emoji-bubble' : ''}`}>
+                {msg.text}
+              </div>
             )}
             <div className="message-info">
-              <span className="time">{msg.time}</span>
+              {msg.time && <span className="time">{msg.time}</span>}
               {msg.status && <span className="status">{msg.status}</span>}
             </div>
           </div>

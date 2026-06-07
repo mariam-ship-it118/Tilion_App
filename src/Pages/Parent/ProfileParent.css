@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 :root {
-  --bg-cream: #f9f9e2;
+  --bg-cream: #FFFCDD;
   --navy-deep: #0a0e29;
   --accent-blue: #7c8cfc;
   --text-main: #2d3e8b;
@@ -122,6 +122,78 @@
     background: #fefbe0;
     transform: scale(1.01);
     color: #2d3e8b;
+}
+
+a.nav-action-row {
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.logout-link {
+    color: #ff7f7f;
+}
+
+.logout-link:hover {
+    color: #ff7f7f;
+}
+
+.logout-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 1100;
+    backdrop-filter: blur(4px);
+}
+
+.logout-modal-content {
+    background: white;
+    padding: 24px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+    animation: modalPop 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.logout-modal-content h3 {
+    margin: 0;
+    color: #1a202c;
+    font-size: 1.2rem;
+}
+
+.logout-modal-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.logout-modal-btn {
+    flex: 1;
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logout-modal-btn.cancel {
+    background: #edf2f7;
+    color: #4a5568;
+}
+
+.logout-modal-btn.confirm {
+    background: #ff7e7e;
+    color: white;
+}
+
+@keyframes modalPop {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
 }
 
 @keyframes fadeInDown {

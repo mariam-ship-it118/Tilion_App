@@ -2,7 +2,7 @@
 
 
 :root {
-  --bg-cream-soft: #fffce0;
+  --bg-cream-soft: #FFFCDD;
   --text-deep-navy: #0a1332;
   --accent-indigo: #3b4ba0;
 }
@@ -10,9 +10,9 @@
 .app-shell-root {
   font-family: 'Poppins', sans-serif;
   background-color: var(--bg-cream-soft);
-  min-height: 300px;
   display: flex;
-  padding: 40px;
+  justify-content: center;
+  padding: 8px 24px 40px;
 }
 
 
@@ -28,9 +28,9 @@
 .module-control-stack {
   display: flex;
   flex-direction: column;
-  gap: 45px; 
+  gap: 36px;
   width: 100%;
-  max-width: 380px; 
+  max-width: 450px;
 }
 
 .control-row-item {
@@ -67,39 +67,36 @@
 
 
 .toggle-track-container {
-  width: 54px;
+  width: 52px;
   height: 28px;
+  background: #ffffff;
   border: 2px solid var(--text-deep-navy);
-  border-radius: 20px;
+  border-radius: 999px;
   position: relative;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  flex-shrink: 0;
+  padding: 0;
+  appearance: none;
+  transition: background-color 0.25s ease;
 }
 
 .toggle-thumb-node {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   background-color: var(--text-deep-navy);
   border-radius: 50%;
   position: absolute;
-  top: 4px;
-  left: 4px;
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  top: 3px;
+  left: 3px;
+  transition: left 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
 }
-
 
 .state-engaged .toggle-thumb-node {
-  transform: translateX(26px);
+  left: 27px;
 }
-
 
 @media (max-width: 1024px) {
-  .app-shell-root {
-    padding: 30px;
-  }
-}
-
-@media (max-width: 480px) {
   .module-control-stack {
     max-width: 100%;
   }

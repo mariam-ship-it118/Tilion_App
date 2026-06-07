@@ -26,6 +26,11 @@
   box-shadow: 0 8px 24px rgba(12, 21, 56, 0.4);
 }
 
+.playground-nav-container a {
+  text-decoration: none;
+  color: inherit;
+}
+
 
 .buddy-action-btn {
   background: transparent;

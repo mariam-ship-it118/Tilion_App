@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
 .dashboard-container {
-  background-color: #fefae0; 
+  background-color: #FFFCDD; 
   min-height: 100vh;
   padding: 40px 20px;
   font-family: 'Poppins', sans-serif;
@@ -21,6 +21,12 @@
   flex-direction: column;
   gap: 15px;
   width: 100%;
+}
+
+.nebula-list a,
+.vault-link {
+  text-decoration: none;
+  margin-left: 2%;
 }
 
 .vault-item {

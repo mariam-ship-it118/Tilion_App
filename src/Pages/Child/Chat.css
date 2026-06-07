@@ -1,0 +1,17 @@
+.chat-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  height: 100dvh;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #3b4a9b;
+  font-family: 'Poppins', sans-serif;
+}
+
+.chat-page-messages {
+  flex: 1;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}

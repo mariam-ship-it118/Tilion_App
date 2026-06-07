@@ -1,20 +1,19 @@
-import React, { Component } from 'react';
-import { useParams } from 'react-router-dom';
-import NavBar from '../../Components/NavBar';
-import TopBar from '../../Components/TopBar';
+import React from 'react';
+import './Chat.css';
 import TopChat from '../../Components/TopChat';
 import TextMessages from '../../Components/TextMessages';
 import ChatBar from '../../Components/ChatBar';
+
 const Chat = () => {
-   
-  const { userId } = useParams(); 
-    return ( <>
-    
-    <TopChat/>
-    <TextMessages/>
- 
-    <ChatBar/>
-    </> );
-}
- 
+  return (
+    <div className="chat-page">
+      <TopChat />
+      <div className="chat-page-messages">
+        <TextMessages />
+      </div>
+      <ChatBar />
+    </div>
+  );
+};
+
 export default Chat;

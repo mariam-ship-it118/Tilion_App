@@ -1,0 +1,307 @@
+.bullying-page {
+  --cream: #FFFCDD;
+  --navy: #0d1326;
+  --blue-text: #5b6fa8;
+  --lime: #d9f110;
+  --red: #e53935;
+  --yellow: #f5c518;
+
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 8px 20px 120px;
+  background: var(--cream);
+  font-family: 'Poppins', sans-serif;
+  min-height: auto;
+  box-sizing: border-box;
+}
+
+.cyber-bullying-wrap {
+  background: #FFFCDD;
+}
+
+.bullying-back-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin: 8px 0 0 20px;
+  color: #2d3e8b;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.bullying-back-btn:active {
+  transform: scale(0.94);
+  background-color: rgba(45, 62, 139, 0.08);
+}
+
+.bullying-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+  animation: bullyingFadeIn 0.5s ease-out;
+}
+
+.bullying-header-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--red);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.bullying-header h1 {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #111;
+}
+
+.bullying-header p {
+  margin: 2px 0 0;
+  font-size: 0.85rem;
+  color: var(--blue-text);
+}
+
+.bullying-ai-card {
+  background: var(--navy);
+  border-radius: 22px;
+  padding: 18px;
+  color: #fff;
+  margin-bottom: 18px;
+  animation: bullyingFadeIn 0.5s ease-out 0.08s both;
+}
+
+.bullying-ai-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.bullying-ai-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.bullying-bell {
+  font-size: 1rem;
+}
+
+.bullying-toggle {
+  border: none;
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-weight: 700;
+  font-size: 0.72rem;
+  cursor: pointer;
+  background: #6b7280;
+  color: #fff;
+  transition: background 0.25s ease, transform 0.2s ease;
+}
+
+.bullying-toggle.on {
+  background: var(--lime);
+  color: #111;
+}
+
+.bullying-toggle:active {
+  transform: scale(0.96);
+}
+
+.bullying-ai-text {
+  margin: 0;
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.bullying-active-content {
+  animation: bullyingFadeIn 0.45s ease-out;
+}
+
+.bullying-alerts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.bullying-alert-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 16px;
+  box-shadow: 0 6px 16px rgba(13, 19, 38, 0.08);
+  animation: bullyingSlideUp 0.45s ease-out both;
+}
+
+.bullying-alert-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.bullying-alert-title-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.bullying-alert-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+.bullying-alert-icon.high {
+  background: var(--red);
+}
+
+.bullying-alert-icon.medium {
+  background: var(--yellow);
+  color: #111;
+}
+
+.bullying-alert-card h2 {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #111;
+}
+
+.bullying-new-badge {
+  background: var(--red);
+  color: #fff;
+  font-size: 0.62rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 999px;
+}
+
+.bullying-confidence {
+  font-size: 0.72rem;
+  color: var(--blue-text);
+  white-space: nowrap;
+}
+
+.bullying-meta,
+.bullying-from {
+  margin: 8px 0 0;
+  font-size: 0.78rem;
+  color: var(--blue-text);
+}
+
+.bullying-from {
+  color: #333;
+}
+
+.bullying-snippet {
+  margin-top: 10px;
+  background: #fef9d7;
+  border-radius: 12px;
+  padding: 10px 12px;
+  font-size: 0.82rem;
+  color: #333;
+  line-height: 1.4;
+}
+
+.bullying-card-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.bullying-btn {
+  flex: 1;
+  border: none;
+  border-radius: 999px;
+  padding: 10px 12px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.bullying-btn.view {
+  background: #4f6fd8;
+  color: #fff;
+}
+
+.bullying-btn.block {
+  background: var(--navy);
+  color: #fff;
+}
+
+.bullying-main-btn {
+  width: 100%;
+  border-radius: 999px;
+  padding: 16px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  margin-bottom: 12px;
+}
+
+.bullying-main-btn.primary {
+  background: var(--navy);
+  color: #fff;
+  border: none;
+}
+
+.bullying-main-btn.secondary {
+  background: #fff;
+  color: var(--navy);
+  border: 2px solid #111;
+}
+
+.bullying-off-message {
+  text-align: center;
+  color: var(--blue-text);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  padding: 40px 16px;
+  animation: bullyingFadeIn 0.45s ease-out;
+}
+
+@keyframes bullyingFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bullyingSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

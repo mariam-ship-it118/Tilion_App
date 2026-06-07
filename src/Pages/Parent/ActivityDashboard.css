@@ -33,6 +33,16 @@ body {
   margin-bottom: 24px;
 }
 
+.portal-task-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.portal-task-link:active .portal-task-tile {
+  opacity: 0.85;
+}
+
 .portal-task-tile {
   margin-bottom: 26px;
 }

@@ -22,6 +22,161 @@ body {
   padding: 10px 0;
 }
 
+.vibe-wrapper {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 12px 16px 110px;
+  box-sizing: border-box;
+}
+
+.vibe-community-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+  animation: vibeHeaderIn 0.45s ease-out;
+}
+
+.vibe-community-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0d1b3e;
+}
+
+.vibe-post-btn {
+  flex-shrink: 0;
+  padding: 10px 18px;
+  border: 2px solid #1a1a1a;
+  border-radius: 999px;
+  background: transparent;
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #0d1b3e;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.vibe-post-btn:active {
+  transform: scale(0.97);
+  background: rgba(13, 27, 62, 0.05);
+}
+
+.vibe-post-animate {
+  animation: vibePostIn 0.45s ease-out both;
+}
+
+.vibe-post-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(13, 27, 62, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 200;
+  animation: vibeModalIn 0.25s ease-out;
+}
+
+.vibe-post-panel {
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  border-radius: 18px;
+  padding: 20px;
+  animation: vibePanelIn 0.35s ease-out;
+}
+
+.vibe-post-panel h2 {
+  margin: 0 0 14px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0d1b3e;
+}
+
+.vibe-post-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px;
+  border: 2px solid #1a1a1a;
+  border-radius: 14px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  resize: none;
+  outline: none;
+  color: #0d1b3e;
+}
+
+.vibe-post-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.vibe-post-cancel,
+.vibe-post-submit {
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-family: inherit;
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.vibe-post-cancel {
+  border: 2px solid #1a1a1a;
+  background: transparent;
+  color: #0d1b3e;
+}
+
+.vibe-post-submit {
+  border: none;
+  background: #3b4998;
+  color: #fff;
+}
+
+@keyframes vibeHeaderIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes vibePostIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes vibeModalIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes vibePanelIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 .vibe-scroll-area {
   opacity: 0;
   transform: translateY(10px);
@@ -120,6 +275,25 @@ body {
   height: 18px;
   margin-left: auto;
   opacity: 0.7;
+}
+
+.vibe-delete-btn {
+  margin-left: auto;
+  padding: 6px 14px;
+  border: 2px solid #ef4444;
+  border-radius: 999px;
+  background: transparent;
+  font-family: inherit;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #ef4444;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.vibe-delete-btn:active {
+  transform: scale(0.97);
+  background: rgba(239, 68, 68, 0.08);
 }
 
 .vibe-seo-data {

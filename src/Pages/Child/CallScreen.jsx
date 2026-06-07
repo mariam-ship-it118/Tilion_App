@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './CallScreen.css';
 import { Link } from 'react-router-dom';
 
-import ProfilePic from "../../Assets/friend.svg";
+import ProfilePic from "../../Assets/profile.svg";
 import Mute from "../../Assets/mute.svg";
 import Video from "../../Assets/vidswitch.svg";
 import Add from "../../Assets/addcontact.svg";
@@ -60,10 +60,8 @@ const CallScreen = () => {
       <meta name="description" content="A safe, creative social media experience for kids aged 7-13. Connect with friends and share your world!" />
 
       <div className="spark-top-bar">
-        <Link to="/chat/:userId">
-        <button className="cloud-back-btn">
+        <Link to="/chat/1" className="cloud-back-btn" aria-label="Back to chat">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
-        </button>
         </Link>
       </div>
 
@@ -122,9 +120,9 @@ const CallScreen = () => {
       </div>
 
       <div className="berry-footer">
-        <button className="jelly-hangup-btn">
+        <Link to="/chat/1" className="jelly-hangup-btn" aria-label="End call">
           <img src={End} alt="" />
-        </button>
+        </Link>
       </div>
     </div>
   );
